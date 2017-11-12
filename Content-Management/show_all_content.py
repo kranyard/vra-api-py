@@ -21,5 +21,5 @@ if ( debug ):
 
 for item in request['content']:
         if (item['contentTypeId'] == "composite-blueprint"):
-                print "{0} - {1} - [{2}]".format(item['id'],item['contentId'],item['description'])
+                print "{0} - {1} - [{2}] {3}".format(item['id'],item['contentId'],item['description'],item['contentTypeId'])
 
