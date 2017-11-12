@@ -7,21 +7,17 @@ import getpass
 import rw
 
 
-if ( len(sys.argv) < 2 ):
-	print ("logon.py <host> <username> <tenant>")
-	exit(1)
-
 # Define hostname and credentials
 
 if ( len(sys.argv) > 1 ):
-	host=sys.argv[1]
-else:
-	host="vra-01a.corp.local"
-
-if ( len(sys.argv) > 2 ):
-	username=sys.argv[2]
+	username=sys.argv[1]
 else:
 	username="jason@corp.local"
+
+if ( len(sys.argv) == 2 ):
+	host="vra-01a.corp.local"
+else:
+	host=sys.argv[2]
 
 if ( len(sys.argv) > 3 ):
 	tenant = sys.argv[3]
@@ -29,9 +25,16 @@ else:
 	tenant="vsphere.local"
 
 if ( len(sys.argv) > 4 ):
-	password=getpass.getpass()
+	if ( sys.argv[4] == "prompt" ):
+		password=getpass.getpass()
+	else:
+		password = sys.argv[4]
 else:
 	password="VMware1!"
+
+if ( (len(sys.argv) > 1) and (sys.argv[1] == "help") ):
+	print ("logon.py <username> <host> <tenant>")
+	exit(1)
 
 values = { 'username':username, 'password':password, 'tenant':tenant }
 data = json.dumps(values)
@@ -41,9 +44,11 @@ r=rw.postUrl("https://{0}/identity/api/tokens".format(host),data=data,headers=he
 
 resp = r.json()
 
-#print json.dumps(resp)
+if "errors" in resp:
+	print json.dumps(resp)
+	exit(1)
 
-print "New shell - logged in as "+username+" at "+host+" - expires at "+resp["expires"]
+print "Session started as ["+username+"] at ["+host+"] and tenant ["+tenant+"] - expires at "+resp["expires"]
 
 os.environ['VRATOKEN'] = resp["id"]
 os.environ['VRATENANT'] = tenant
