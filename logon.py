@@ -14,12 +14,12 @@ if ( len(sys.argv) > 1 ):
 else:
 	username="jason@corp.local"
 
-if ( len(sys.argv) == 2 ):
-	host="vra-01a.corp.local"
-else:
+if ( len(sys.argv) >= 2 ):
 	host=sys.argv[2]
+else:
+	host="vra-01a.corp.local"
 
-if ( len(sys.argv) > 3 ):
+if ( len(sys.argv) >= 3 ):
 	tenant = sys.argv[3]
 else:
 	tenant="vsphere.local"
@@ -35,6 +35,8 @@ else:
 if ( (len(sys.argv) > 1) and (sys.argv[1] == "help") ):
 	print ("logon.py <username> <host> <tenant>")
 	exit(1)
+
+print username, host, tenant
 
 values = { 'username':username, 'password':password, 'tenant':tenant }
 data = json.dumps(values)

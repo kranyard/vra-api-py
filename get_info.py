@@ -40,9 +40,9 @@ request = json.loads(stream.read())
 c=request["content"]
 
 for c in request["content"]: 
-	#for key, value in c.items():
-		#print key, ':=', value
-	#print '-----'
+	for key, value in c.items():
+		print key, ':=', value
+	print '-----'
 	print c["name"]
 	if 'data' in c:
 		if 'ip_address' in c["data"]:
