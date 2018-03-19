@@ -13,7 +13,7 @@ id = os.environ['VRATOKEN']
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/catalog-service/api/consumer/resources?limit=99999&$filter=catalogItem/name+eq+'{1}'".format(host,catid)
+url = "https://{0}/catalog-service/api/consumer/resources?limit=99999&$filter=catalogItem/name+eq+'{1}'+and+resourceType/id+eq+'composition.resource.type.deployment'".format(host,catid)
 request = rw.getUrl(url,headers)
 
 #print json.dumps(request)
@@ -23,7 +23,7 @@ for x in request["content"]:
 
 	parentId = x['id']
 
-	url = "https://{0}/catalog-service/api/consumer/resources/?$filter=parentResource/id+eq+'{1}'+and+resourceType/name+eq+'Virtual Machine'".format(host,parentId)
+	url = "https://{0}/catalog-service/api/consumer/resources/?$filter=parentResource/id+eq+'{1}'+and+resourceType/id+eq+'Infrastructure.Virtual'".format(host,parentId)
 	request = rw.getUrl(url,headers)
 	#print json.dumps(request)
 	

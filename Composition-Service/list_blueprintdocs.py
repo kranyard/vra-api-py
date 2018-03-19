@@ -23,5 +23,7 @@ if ( debug ):
 	print json.dumps(request)
 	exit (0)
 
+print "Blueprints"
+
 for item in request['content']:
-	print item['name'], item['id']
+	print "Name: ["+item['name']+"] ID: ["+item['id']+"]"

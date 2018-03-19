@@ -17,7 +17,7 @@ request = rw.getUrl(url,headers)
 #print json.dumps(request)
 
 for x in request["content"]:
-	print "RESOURCE ID",x['id'],x['name']
+	print x['resourceTypeRef']['label'],x['id'],x['name']
 	#for key, value in x.items():
 	#	print key, ':=', value
 	#print '-----'
