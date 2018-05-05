@@ -9,27 +9,32 @@ import json
 
 import rw
 
-deployment = sys.argv[1]
+import urllib
 
-host="vra-01a.corp.local"
-username="jason@corp.local"
-tenant="vsphere.local"
-password="VMware1!"
+deployment = urllib.quote(sys.argv[1])
 
-values = { 'username':username, 'password':password, 'tenant':tenant }
-data = json.dumps(values)
-headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8'}
+host=os.environ['VRAHOST']
+id = os.environ['VRATOKEN']
 
-r=rw.postUrl("https://{0}/identity/api/tokens".format(host),data=data,headers=headers)
+#host="vra-01a.corp.local"
+#username="jason@corp.local"
+#tenant="vsphere.local"
+#password="VMware1!"
 
-resp = r.json()
+#values = { 'username':username, 'password':password, 'tenant':tenant }
+#data = json.dumps(values)
+#headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8'}
 
-id = resp["id"]
+#r=rw.postUrl("https://{0}/identity/api/tokens".format(host),data=data,headers=headers)
+
+#resp = r.json()
+
+#id = resp["id"]
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 #url = "https://{0}/catalog-service/api/consumer/resources?$filter=requestNumber%20eq%20{1}".format(host,request_number)
-url = "https://{0}/catalog-service/api/consumer/resources?$filter=name%20eq%20'{1}'".format(host,deployment)
+url = "https://{0}/catalog-service/api/consumer/resources?$filter=name%20eq%20'{1}'&limit=9999".format(host,deployment)
 request = rw.getUrl(url,headers)
 
 #print json.dumps(request)

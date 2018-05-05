@@ -6,9 +6,9 @@ import json
 
 
 # Define hostname and credentials
-host="vra-01a.corp.local"
-username="jason@corp.local"
-tenant="vsphere.local"
+host="cava-n-80-066.eng.vmware.com"
+username="fritz@coke.sqa-horizon.local"
+tenant="qe"
 password="VMware1!"
 
 # Build curl cmd using credentials etc
