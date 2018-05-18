@@ -44,6 +44,8 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 
 r=rw.postUrl("https://{0}/identity/api/tokens".format(host),data=data,headers=headers,showUrl=False)
 
+print r
+
 resp = r.json()
 
 if "errors" in resp:

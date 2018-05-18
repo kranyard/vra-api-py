@@ -9,21 +9,41 @@ import rw
 
 debug = False
 
+paging=True
+pageSize=50
 
 host=os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/composition-service/api/blueprintdocuments".format(host)
+url = "https://{0}/composition-service/api/blueprintdocuments?limit={1}".format(host, pageSize)
 
-request = rw.getUrl(url,headers)
+flag=True
+while flag:
 
-if ( debug ):
-	print json.dumps(request)
-	exit (0)
+	request = rw.getUrl(url,headers)
 
-print "Blueprints"
+	if (paging):
+		url=False
+		for l in request["links"]:
+			if l["rel"] == "next":
+				url = l["href"]
 
-for item in request['content']:
-	print "Name: ["+item['name']+"] ID: ["+item['id']+"]"
+		if (not url):
+			flag = False
+			print "Complete"
+		else:
+			print "Next URL "+url
+	else:
+		flag=False
+
+
+	if ( debug ):
+		print json.dumps(request)
+		exit (0)
+
+	print "Blueprints"
+
+	for item in request['content']:
+		print "Name: ["+item['name']+"] ID: ["+item['id']+"]"
