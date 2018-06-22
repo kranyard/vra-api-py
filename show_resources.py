@@ -11,14 +11,26 @@ id = os.environ['VRATOKEN']
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/catalog-service/api/consumer/resources?limit=99999".format(host)
+url = "https://{0}/catalog-service/api/consumer/resources".format(host)
 request = rw.getUrl(url,headers)
 
 #print json.dumps(request)
 
 for x in request["content"]:
-	print x['resourceTypeRef']['label'],x['id'],x['name']
-	#for key, value in x.items():
-	#	print key, ':=', value
-	#print '-----'
+	print x["name"],x["requestId"], x["resourceTypeRef"]["label"]
+
+	#rw.showProperties(x)
+
+	requestId = x["requestId"]
+
+	if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
+		url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host, requestId)
+		r = rw.getUrl(url,headers )
+		rw.findProperties(r, "resourceId")
+
+		for c in r["content"]: 
+			print "Name: "+c["name"]
+			if 'data' in c:
+				if 'ip_address' in c["data"]:
+					print "   ",c["data"]["ip_address"]
 

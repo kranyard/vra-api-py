@@ -21,8 +21,42 @@ def postUrl(url,headers,data,showUrl=showUrl):
 	#print r.headers
 
 	#if ( r.status_code == 200 ):
-	#	return r.json()
+		#return r.json()
 	
+
+def findProperties(item, name):
+	_findProps(item, name, "", 0)
+
+def _findProps(item, name, k, l):
+	p1 = "F"
+	p2 = "F"
+	for x in range(0,l):
+		p1 += "FF"
+
+	for x in range(0,l-1):
+		p2 += "FF"
+
+	if isinstance(item, dict):
+		print p2+"Dictionary : {"+k+"}"
+		for key, value in item.items():
+			if (isinstance(value, dict) or isinstance(value, list)):
+				_findProps(value, name, str(key),l+1)
+			else :
+				if ( name == key ):
+					print p1+" ["+str(key)+"] ["+str(value)+"]"
+	elif isinstance(item, list):
+		print p2+"List : {"+k+"}"
+		for value in item:	
+			if (isinstance(value, dict) or isinstance(value, list)):
+				_findProps(value, name, "",l+1)
+			else :
+				print p1+"L "+str(value)
+	else:
+		# Scalar
+		if ( k != "" ):
+			print p1+"SCALAR {"+k+"} "+str(item)
+		else:
+			print p1+"S "+str(item)
 
 def showProperties(item):
 	_showProps(item, "", 0)
@@ -42,7 +76,7 @@ def _showProps(item, k, l):
 			if (isinstance(value, dict) or isinstance(value, list)):
 				_showProps(value, str(key),l+1)
 			else :
-				print p1+"D["+str(key)+"] ["+str(value)+"]"
+				print p1+" ["+str(key)+"] ["+str(value)+"]"
 	elif isinstance(item, list):
 		print p2+"List : {"+k+"}"
 		for value in item:	
@@ -53,7 +87,7 @@ def _showProps(item, k, l):
 	else:
 		# Scalar
 		if ( k != "" ):
-			print p1+"{"+k+"} "+str(item)
+			print p1+"SCALAR {"+k+"} "+str(item)
 		else:
 			print p1+"S "+str(item)
 

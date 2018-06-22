@@ -15,8 +15,6 @@ url="https://{0}/catalog-service/api/consumer/requests?limit=30&$orderby=request
 request = rw.getUrl(url,headers)
 
 for x in request["content"]:
-	print "REQUEST",x['id'],x['requestNumber'],x['phase'],x['@type']
-	#for key, value in x.items():
-		#print key, ':=', value
-	#print '-----'
+	print x['id'],x['requestNumber'],x['phase'],x['@type']
+	#rw.showProperties(x)
 
