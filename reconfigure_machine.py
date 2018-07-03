@@ -48,7 +48,8 @@ request = rw.getUrl(gUrl,headers)
 
 print request['data']['memory']
 
-request['data']['memory'] = 1024
+request['data']['memory'] = 4096
 
-rw.postUrl(pUrl, headers, json.dumps(request))
+r = rw.postUrl(pUrl, headers, json.dumps(request))
 
+print r

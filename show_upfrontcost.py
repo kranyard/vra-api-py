@@ -38,5 +38,6 @@ for c in request["components"]:
 		url = "https://{0}/composition-service/api/blueprints/{1}/costs/upfront".format(host, blueprint)
 		r=rw.postUrl(url,headers=headers,data=json.dumps(getCostJson))
 
-		print r.json()
-		rw.showProperties(r.json())
+		#print r.json()
+		#rw.showProperties(r.json())
+		print json.dumps(r.json())

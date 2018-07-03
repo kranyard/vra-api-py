@@ -42,7 +42,7 @@ values = { 'username':username, 'password':password, 'tenant':tenant }
 data = json.dumps(values)
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8'}
 
-r=rw.postUrl("https://{0}/identity/api/tokens".format(host),data=data,headers=headers,showUrl=False)
+r=rw.postUrl("https://{0}/identity/api/tokens".format(host),data=data,headers=headers,showUrl=True)
 
 print r
 
@@ -53,6 +53,7 @@ if "errors" in resp:
 	exit(1)
 
 print "Session started as ["+username+"] at ["+host+"] and tenant ["+tenant+"] - expires at "+resp["expires"]
+print "ID Token : ", resp["id"]
 
 os.environ['VRATOKEN'] = resp["id"]
 os.environ['VRATENANT'] = tenant

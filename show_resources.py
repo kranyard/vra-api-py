@@ -17,20 +17,18 @@ request = rw.getUrl(url,headers)
 #print json.dumps(request)
 
 for x in request["content"]:
-	print x["name"],x["requestId"], x["resourceTypeRef"]["label"]
 
 	#rw.showProperties(x)
 
-	requestId = x["requestId"]
-
 	if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
-		url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host, requestId)
-		r = rw.getUrl(url,headers )
-		rw.findProperties(r, "resourceId")
+		print x["name"],x["requestId"], x["resourceTypeRef"]["label"]
+		requestId = x["requestId"]
+		#url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host, requestId)
+		#r = rw.getUrl(url,headers )
+		#rw.findProperties(r, "resourceId")
 
-		for c in r["content"]: 
-			print "Name: "+c["name"]
-			if 'data' in c:
-				if 'ip_address' in c["data"]:
-					print "   ",c["data"]["ip_address"]
-
+		#for c in r["content"]: 
+		#	print "Name: "+c["name"]
+		#	if 'data' in c:
+		#		if 'ip_address' in c["data"]:
+		#			print "   ",c["data"]["ip_address"]
