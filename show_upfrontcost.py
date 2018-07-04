@@ -40,4 +40,8 @@ for c in request["components"]:
 
 		#print r.json()
 		#rw.showProperties(r.json())
-		print json.dumps(r.json())
+
+		c = r.json()
+		print json.dumps(c[0])
+
+		print c[0]['count']
