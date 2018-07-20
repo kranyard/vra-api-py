@@ -18,11 +18,12 @@ request = rw.getUrl(url,headers)
 
 for x in request["content"]:
 
-	#rw.showProperties(x)
+	rw.showProperties(x)
+	#print x['providerBinding']['bindingId']
 
-	if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
-		print x["name"],x["requestId"], x["resourceTypeRef"]["label"]
-		requestId = x["requestId"]
+	#if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
+		#print x["name"],x["requestId"], x["resourceTypeRef"]["label"]
+		#requestId = x["requestId"]
 		#url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host, requestId)
 		#r = rw.getUrl(url,headers )
 		#rw.findProperties(r, "resourceId")

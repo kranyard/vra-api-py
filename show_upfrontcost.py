@@ -38,10 +38,20 @@ for c in request["components"]:
 		url = "https://{0}/composition-service/api/blueprints/{1}/costs/upfront".format(host, blueprint)
 		r=rw.postUrl(url,headers=headers,data=json.dumps(getCostJson))
 
-		#print r.json()
-		#rw.showProperties(r.json())
-
 		c = r.json()
-		print json.dumps(c[0])
 
-		print c[0]['count']
+		print json.dumps(c)
+		
+		for c in r.json():
+			fieldMap = c['fieldMap']
+
+			print c["componentId"]
+
+			for i in fieldMap:
+				print i, fieldMap[i]['displayString'], fieldMap[i]['min'], fieldMap[i]['max']
+
+			totalLease = c['totalLeasePriceInfo']
+			print "totalLease", totalLease['displayString'], totalLease['min'], totalLease['max']
+
+			averageDailyPriceInfo = c['averageDailyPriceInfo']
+			print "averageDailyPriceInfo", averageDailyPriceInfo['displayString'], averageDailyPriceInfo['min'], averageDailyPriceInfo['max']

@@ -47,6 +47,8 @@ delete_json={"@type":"ResourceActionRequest","resourceRef":{"id":resource_id }, 
 url="https://{0}/catalog-service/api/consumer/requests".format(host)
 r=rw.postUrl(url,headers=headers,data=json.dumps(delete_json))
 
-r=rw.getUrl(r.headers['Location'],headers=headers)
-
 print r
+
+#r=rw.getUrl(r.headers['Location'],headers=headers)
+
+#print r

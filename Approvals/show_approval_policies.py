@@ -7,8 +7,6 @@ import json
 sys.path.append("../")
 import rw
 
-approvalPolicy = sys.argv[1]
-
 debug = False
 
 paging=True
@@ -46,9 +44,8 @@ while flag:
 		exit (0)
 
 	for item in request['content']:
-		if ( item['name'] == approvalPolicy ):
-			print "Policy: ["+item['name']+"] ID: ["+item['id']+"]"
-			for levels in item['phases'][0]['levels']:
-				print "Level : [",levels['name'], "] ID: [", levels['id'], "]"
-				for approver in levels['approvers']:
-					print "   "+approver['value']
+		print "Policy: ["+item['name']+"] ID: ["+item['id']+"]"
+		for levels in item['phases'][0]['levels']:
+			print "Level : [",levels['name'], "] ID: [", levels['id'], "]"
+			for approver in levels['approvers']:
+				print "   "+approver['value']

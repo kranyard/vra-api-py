@@ -7,7 +7,7 @@ import json
 sys.path.append("../")
 import rw
 
-debug = True
+debug = False
 
 docid = sys.argv[1]
 
@@ -24,5 +24,11 @@ if ( debug ):
 	print json.dumps(request)
 	exit (0)
 
+#rw.showProperties(request)
 
-rw.showProperties(request)
+for i in request['components']:
+	print i
+	print "Memory default value : "+str(request['components'][i]['data']['memory']['facets']['defaultValue']['value']['value'])
+	print "Storage default value : "+str(request['components'][i]['data']['storage']['facets']['defaultValue']['value']['value'])
+	print "CPU default value : "+str(request['components'][i]['data']['cpu']['facets']['defaultValue']['value']['value'])
+
