@@ -8,6 +8,7 @@ import time
 import json
 import pprint
 
+sys.path.append("../")
 import rw
 
 host = os.environ['VRAHOST']

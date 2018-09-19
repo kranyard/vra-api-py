@@ -9,12 +9,9 @@ id = os.environ['VRATOKEN']
 
 machine = sys.argv[1]
 
-cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/resources?limit=99999 2> /dev/null".format(id,host)
-
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
-
+headers = "-H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"".format(id)
+url = "https://{0}//catalog-service/api/consumer/resources?limit=99999".format(host)
+request = rw.getUrl(url, headers, showUrl=True) 
 #print json.dumps(request)
 
 parent = None 
@@ -35,21 +32,15 @@ if ( parent == None ):
 
 parent_id = parent['id']
 
-cmd="curl --insecure -H \"Accept: application/json;charset=UTF-8\" -H \"Content-Type: application/json;charset=UTF-8\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/resources/{2}/actions 2> /dev/null".format(id,host,parent_id)
-
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
+url = "https://{0}/catalog-service/api/consumer/resources/{1}/actions".format(host,parent_id)
+request = rw.getUrl(url, headers, showUrl=True) 
 
 print parent['label']
 for c in request['content']:
 	print "  ",c['name']
 
-cmd="curl --insecure -H \"Accept: application/json;charset=UTF-8\" -H \"Content-Type: application/json;charset=UTF-8\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/resources/{2}/actions 2> /dev/null".format(id,host,this_id)
-
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
+url = "https://{0}/catalog-service/api/consumer/resources/{1}/actions".format(host,this_id)
+request = rw.getUrl(url, headers, showUrl=True) 
 
 print machine
 for c in request['content']:

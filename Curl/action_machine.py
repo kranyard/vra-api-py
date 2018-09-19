@@ -10,13 +10,10 @@ id = os.environ['VRATOKEN']
 machine = sys.argv[1]
 action = sys.argv[2]
 
-cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/resources?limit=99999 2> /dev/null".format(id,host)
-
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
-
-#print json.dumps(request)
+headers = "-H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"".format(id)
+url = "https://{0}//catalog-service/api/consumer/resources?limit=99999".format(host)
+request = rw.getUrl(url, headers, showUrl=True) 
+print json.dumps(request)
 
 parent = None 
 
@@ -36,11 +33,10 @@ if ( parent == None ):
 
 parent_id = parent['id']
 
-cmd="curl --insecure -H \"Accept: application/json;charset=UTF-8\" -H \"Content-Type: application/json;charset=UTF-8\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/resources/{2}/actions 2> /dev/null".format(id,host,this_id)
+url = "https://{0}/catalog-service/api/consumer/resources/{1}/actions".format(host,this_id)
+request = rw.getUrl(url, headers, showUrl=True) 
 
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
+print json.dumps(request)
 
 for c in request['content']:
 	if c['name'] == action : 
@@ -48,9 +44,11 @@ for c in request['content']:
 
 		action_payload={"@type":"ResourceActionRequest","resourceRef":{"id":this_id }, "resourceActionRef":{"id":resourceActionRef}, "organization":{"tenantRef":tenantRef,"tenantLabel":tenantLabel,"subtenantRef":subtenantRef,"subtenantLabel":subtenantLabel },"state":"SUBMITTED", "requestNumber":0, "requestData":{"entries":[{"key":"description", "value":{"type":"string" , "value":"test"}},{"key":"reasons"}]}}
 
-		cmd="curl --verbose --insecure -X POST -H \"Accept: application/json;charset=UTF-8\" -H \"Content-Type: application/json;charset=UTF-8\" -H \"Authorization: Bearer {0} \"  --data \'{2}\' https://{1}/catalog-service/api/consumer/requests 2> /dev/null".format(id,host,json.dumps(action_payload))
+		url=https://{0}/catalog-service/api/consumer/requests".format(host)
+		data = "\'{0}\'".format(json.dumps(action_payload))
 
-		stream = os.popen(cmd)
+		request = rw.postUrl(url, headers, data, showUrl=True)
+
 		exit(0)
 
 print "No action found"

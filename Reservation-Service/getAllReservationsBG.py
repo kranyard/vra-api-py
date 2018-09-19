@@ -13,7 +13,7 @@ import rw
 
 pageSize=1000
 
-#computeResource = sys.argv[1]
+bgid = sys.argv[1]
 
 host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
@@ -26,13 +26,13 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 
 #url = "https://{0}/reservation-service/api/reservations?$filter=substringof('QA',name)".format(host)
 
-url = "https://{0}/reservation-service/api/reservations?limit={1}".format(host, pageSize)
+url = "https://{0}/reservation-service/api/reservations?limit={1}&$filter=subTenantId eq '{2}'".format(host, pageSize, bgid)
 
 flag=True
 while flag:
 
 	request = rw.getUrl(url,headers)
-
+	
 	url=False
 	for l in request["links"]:
 		if l["rel"] == "next":
@@ -44,8 +44,6 @@ while flag:
 		pp.pprint(request)
 		#print json.dumps(request)
 		exit (0)
-
-	print request['metadata']
 
 	for item in request['content']:
 		for e in item["extensionData"]["entries"]:

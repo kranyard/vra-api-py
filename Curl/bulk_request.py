@@ -5,16 +5,17 @@ import sys
 import json
 import time
 
+import rw
+
 host=os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
 blueprint = sys.argv[1]
 
-cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/entitledCatalogItemViews 2> /dev/null".format(id,host)
+headers = "-H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"".format(id)
 
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
+url = "https://{0}/catalog-service/api/consumer/entitledCatalogItemViews".format(host)
+request = rw.getUrl(url, headers, showUrl=True) 
 
 i=0
 for item in request['content']:
@@ -22,11 +23,8 @@ for item in request['content']:
 	if ( item['name'] == blueprint ):
 		select_id=request['content'][i-1]['catalogItemId']
 
-cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/entitledCatalogItems/{2}/requests/template 2> /dev/null".format(id,host,select_id)
-
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
+url = "https://{0}/catalog-service/api/consumer/entitledCatalogItems/{1}/requests/template".format(host,select_id)
+request = rw.getUrl(url, headers, showUrl=True) 
 
 #print json.dumps(request) 
 
@@ -35,31 +33,24 @@ print request['data']
 #request['data']['CentOS_6.3']['data']['_cluster'] = 5
 #print request['data']['_number_of_instances']
 #request['data']['_number_of_instances'] = 5
-exit(1)
 
+data = "\'{0}\'".format(json.dumps(request))
+url = "https://{0}/catalog-service/api/consumer/entitledCatalogItems/{1}/requests".format(host,select_id)
 
-cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  --data \'{2}\'  https://{1}/catalog-service/api/consumer/entitledCatalogItems/{3}/requests 2> /dev/null".format(id,host,json.dumps(request),select_id)
-
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
+request = rw.postUrl(url, headers, data, showUrl=True) 
 
 request_id = request['id']
 
-cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/requests/{2} 2> /dev/null".format(id,host,request_id)
+url = "https://{0}/catalog-service/api/consumer/requests/{1}".format(host,request_id)
 
 while True:
-	stream = os.popen(cmd)
-	x = json.loads(stream.read())
+	x = rw.getUrl(url, headers, showUrl=True) 
 	print x['requestNumber'],x['id'],x['state'],x['phase']
 	time.sleep(10) 
 	if x['phase'] == "SUCCESSFUL" : 
 		break
 
-cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  https://{1}/catalog-service/api/consumer/requests/{2}/resourceViews 2> /dev/null".format(id,host,request_id)
-
-stream = os.popen(cmd)
-
-request = json.loads(stream.read())
+url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host,request_id)
+request = rw.getUrl(url, headers, showUrl=True) 
 
 print json.dumps(request) 
