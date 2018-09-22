@@ -9,8 +9,14 @@ import rw
 
 # Define hostname and credentials
 
+print len(sys.argv)
+
 if ( len(sys.argv) > 1 ):
-	username=sys.argv[1]
+	if ( sys.argv[1] == "help" ):
+		print ("logon.py <username> <host> <tenant>")
+		exit(1)
+	else:
+		username=sys.argv[1]
 else:
 	username="jason@corp.local"
 
@@ -31,10 +37,6 @@ if ( len(sys.argv) > 4 ):
 		password = sys.argv[4]
 else:
 	password="VMware1!"
-
-if ( (len(sys.argv) > 1) and (sys.argv[1] == "help") ):
-	print ("logon.py <username> <host> <tenant>")
-	exit(1)
 
 print username, host, tenant
 

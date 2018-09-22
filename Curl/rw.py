@@ -9,7 +9,7 @@ def getUrl(url,headers,showUrl=showUrl):
 	if (showUrl):
 		print "GET: "+url
 
-	cmd="curl --insecure {0} \'{1}\' 2> /dev/null".format(headers,url)
+	cmd="curl -s --insecure {0} \'{1}\'".format(headers,url)
 
 	stream = os.popen(cmd)
 
@@ -20,12 +20,13 @@ def postUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):
 		print "POST: "+url
 		print data
-	cmd="curl --insecure {0} --data {1} \'{2}\' 2> /dev/null".format(headers,data, url)
+	cmd="curl -s --insecure {0} --data {1} \'{2}\'".format(headers,data, url)
 
 	stream = os.popen(cmd)
 
-	request = json.loads(stream.read())
-	return request
+	print stream.read()
+	#request = json.loads(stream.read())
+	#return request
 
 
 def findProperties(item, name):

@@ -1,0 +1,2 @@
+GET: https://sc-va-lb.sqa.local/identity/api/tenants/swisscom/principals/T2.BGA2602@vralarge.local/subtenants
+{u'totalPages': 100, u'offset': 0, u'totalElements': 2000, u'number': 1, u'size': 20}

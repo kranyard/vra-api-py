@@ -24,6 +24,8 @@ url = "https://{0}/catalog-service/api/consumer/entitledCatalogItemViews".format
 
 request = rw.getUrl(url,headers)
 
+print request['metadata']
+
 if ( debug ):
 	pp.pprint(request)
 	#print json.dumps(request)

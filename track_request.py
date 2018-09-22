@@ -37,7 +37,7 @@ while True:
 url="https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host,request_id)
 request = rw.getUrl(url,headers)
 
-#print json.dumps(request) 
+print json.dumps(request) 
 
 c=request["content"]
 
@@ -46,3 +46,5 @@ for c in request["content"]:
 	if 'data' in c:
 		if 'ip_address' in c["data"]:
 			print "   ",c["data"]["ip_address"]
+		if 'machineId' in c["data"]:
+			print "   ",c["data"]["machineId"]

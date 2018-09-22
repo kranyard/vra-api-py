@@ -18,6 +18,8 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 url = "https://{0}/iaas-proxy-provider/api/network/profiles?limit=9999".format(host)
 request = rw.getUrl(url,headers)
 
+print request
+
 for item in request['content']:
 	if (item["@type"] == "ExternalNetworkProfile"):
 		print (item["@type"]+":: "+item["name"]+" :: "+item["id"])
