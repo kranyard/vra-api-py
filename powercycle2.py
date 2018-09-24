@@ -4,17 +4,18 @@ import os
 import sys
 import json
 import time
+import requests
+
 import urllib
 
-import json
-
 import rw
+
+import json
 
 host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
 machine = urllib.quote(sys.argv[1])
-action = "Reconfigure"
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
@@ -22,35 +23,54 @@ url = "https://{0}/catalog-service/api/consumer/resources?$filter=name%20eq%20'{
 request = rw.getUrl(url,headers)
 
 c = request["content"][0]
-this_id = c ['id']
-
-parent = c['parentResourceRef']
-parent_id = parent['id']
+resourceId  = c ['id']
 
 tenantLabel=c['organization']['tenantLabel']
 tenantRef=c['organization']['tenantRef']
 subtenantLabel=c['organization']['subtenantLabel']
 subtenantRef=c['organization']['subtenantRef']
 
-url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host,this_id)
+gUrl = ""
+pUrl = ""
+
+url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host,resourceId)
 request = rw.getUrl(url,headers)
 
-#print json.dumps(request)
+print machine
+
+response = ""
 
 for c in request['links']:
 	print c['rel']
-	if ("Reconfigure" in c['rel']): 
+	if ("PowerOff" in c['rel']): 
 		if ("GET" in c['rel']):
 			gUrl=c['href']
 		if ("POST" in c['rel']):
 			pUrl=c['href']
+		print "Power Off : "+machine
+
+	if ("PowerOn" in c['rel']): 
+		if ("GET" in c['rel']):
+			gUrl=c['href']
+		if ("POST" in c['rel']):
+			pUrl=c['href']
+		print "Power On : "+machine
+
+if ( gUrl == "" ):
+	print "No action found"
+	exit(1)
 
 request = rw.getUrl(gUrl,headers)
+print request
 
-print request['data']['memory']
+response = rw.postUrl(pUrl, headers, json.dumps(request))
+print response
+url = response.headers['Location'] 
 
-request['data']['memory'] = 4096
+while True:
+	x = rw.getUrl(url,headers,showUrl=False)
+	print x['requestNumber'],x['id'],x['state'],x['phase']
+	if x['phase'] == "SUCCESSFUL" : 
+		break
+	time.sleep(10) 
 
-r = rw.postUrl(pUrl, headers, json.dumps(request))
-
-print r

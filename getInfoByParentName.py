@@ -46,6 +46,8 @@ request = rw.getUrl(url,headers)
 for item in request['content']:
 	print "Name "+item['name'],item["resourceType"]
 	if (item['resourceType'] == "Infrastructure.Virtual"):
-		rw.showProperties(item['data'])
+		print json.dumps(item['data'])
+
+		#rw.showProperties(item['data'])
 
 

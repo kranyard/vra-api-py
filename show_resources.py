@@ -14,7 +14,7 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 url = "https://{0}/catalog-service/api/consumer/resources".format(host)
 request = rw.getUrl(url,headers)
 
-#print json.dumps(request)
+print json.dumps(request)
 
 for x in request["content"]:
 
