@@ -30,7 +30,8 @@ request = rw.getUrl(url,headers)
 #print request['data']['vSphere__vCenter__Machine_1']['data']['_cluster']
 #request['data']['vSphere__vCenter__Machine_1']['data']['_cluster'] = 2
 #print request['data']['_number_of_instances']
-#request['data']['_number_of_instances'] = 3
+request['data']['_number_of_instances'] = 10
+print "Modified number of instances/deployments : ",request['data']['_number_of_instances']
 
 url="https://{0}/catalog-service/api/consumer/entitledCatalogItems/{1}/requests".format(host,select_id)
 r=rw.postUrl(url,headers=headers,data=json.dumps(request))

@@ -17,6 +17,8 @@ id = os.environ['VRATOKEN']
 
 machine = urllib.quote(sys.argv[1])
 
+waitFlag = False
+
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 url = "https://{0}/catalog-service/api/consumer/resources?$filter=name%20eq%20'{1}'".format(host,machine)
@@ -24,11 +26,6 @@ request = rw.getUrl(url,headers)
 
 c = request["content"][0]
 resourceId  = c ['id']
-
-tenantLabel=c['organization']['tenantLabel']
-tenantRef=c['organization']['tenantRef']
-subtenantLabel=c['organization']['subtenantLabel']
-subtenantRef=c['organization']['subtenantRef']
 
 gUrl = ""
 pUrl = ""
@@ -67,7 +64,7 @@ response = rw.postUrl(pUrl, headers, json.dumps(request))
 print response
 url = response.headers['Location'] 
 
-while True:
+while waitFlag:
 	x = rw.getUrl(url,headers,showUrl=False)
 	print x['requestNumber'],x['id'],x['state'],x['phase']
 	if x['phase'] == "SUCCESSFUL" : 
