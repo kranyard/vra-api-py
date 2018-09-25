@@ -6,10 +6,7 @@ import json
 import getpass
 import rw
 
-
 # Define hostname and credentials
-
-print len(sys.argv)
 
 if ( len(sys.argv) > 1 ):
 	if ( sys.argv[1] == "help" ):
@@ -20,12 +17,12 @@ if ( len(sys.argv) > 1 ):
 else:
 	username="jason@corp.local"
 
-if ( len(sys.argv) >= 2 ):
+if ( len(sys.argv) > 2 ):
 	host=sys.argv[2]
 else:
 	host="vra-01a.corp.local"
 
-if ( len(sys.argv) >= 3 ):
+if ( len(sys.argv) > 3 ):
 	tenant = sys.argv[3]
 else:
 	tenant="vsphere.local"
@@ -46,18 +43,19 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 
 r=rw.postUrl("https://{0}/identity/api/tokens".format(host),data=data,headers=headers,showUrl=True)
 
-print r
-
 resp = r.json()
 
 if "errors" in resp:
 	print json.dumps(resp)
 	exit(1)
 
-print "Session started as ["+username+"] at ["+host+"] and tenant ["+tenant+"] - expires at "+resp["expires"]
+print "Session started as ["+username+"] at ["+host+"] and tenant ["+tenant+"]"
+print "Expires at : "+resp["expires"]
 print "ID Token : ", resp["id"]
 
 os.environ['VRATOKEN'] = resp["id"]
 os.environ['VRATENANT'] = tenant
 os.environ['VRAHOST'] = host
+os.environ['VRAUSER'] = username
+os.environ['VRAEXPIRY'] = resp["expires"]
 os.system("/bin/bash -i") 
