@@ -8,15 +8,18 @@ import time
 import json
 import pprint
 
+import urllib
+
 sys.path.append("../")
 import rw
 
 pageSize=1000
 
-bgid = sys.argv[1]
+bgName = sys.argv[1]
 
 host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
+tenant = os.environ['VRATENANT']
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -24,15 +27,25 @@ debug = False
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
+# Get subTenantId (Business Group ID) from name
+url="https://{0}/identity/api/tenants/{1}/subtenants?$filter=name eq '{2}'".format(host, tenant, bgName)
+
+request = rw.getUrl(url,headers)
+
+for c in request["content"]:
+	print "Business group ID "+c["id"]
+	bgId = c["id"]
+
+
 #url = "https://{0}/reservation-service/api/reservations?$filter=substringof('QA',name)".format(host)
 
-url = "https://{0}/reservation-service/api/reservations?limit={1}&$filter=subTenantId eq '{2}'".format(host, pageSize, bgid)
+url = "https://{0}/reservation-service/api/reservations?limit={1}&$filter=subTenantId eq '{2}'".format(host, pageSize, bgId)
 
 flag=True
 while flag:
 
 	request = rw.getUrl(url,headers)
-	
+
 	url=False
 	for l in request["links"]:
 		if l["rel"] == "next":
@@ -47,6 +60,14 @@ while flag:
 
 	for item in request['content']:
 		for e in item["extensionData"]["entries"]:
-			if ( ("classId" in e["value"]) and (e["value"]["classId"] == "ComputeResource") ) :
-				#if ( e["value"]["label"] == computeResource ) :
-				print item['name'], item['id'], "Compute Resource: "+e["value"]["label"]
+			if ("computeResource" in e["key"]):
+				computeResource = e["value"]["label"]
+
+			if ("reservationStorages" in e["key"]):
+				for i in e["value"]["items"]:
+					for v in i["values"]["entries"]:
+						if ("storagePath" in v["key"]) :
+							storagePath = v["value"]["label"]
+
+
+		print "["+item["name"]+"]", storagePath, "["+computeResource+"]"
