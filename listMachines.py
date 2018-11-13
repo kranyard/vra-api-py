@@ -36,7 +36,8 @@ while flag:
 	for x in request["content"]:
 		#rw.showProperties(x)
 		if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
-			print x['name'], x['providerBinding']['bindingId'] ,x["requestId"], x["resourceTypeRef"]["label"]
+			print x['name']
+			#print x['name'], x['providerBinding']['bindingId'] ,x["requestId"], x["resourceTypeRef"]["label"]
 			requestId = x["requestId"]
 
 			#url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host, requestId)

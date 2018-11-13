@@ -19,7 +19,7 @@ debug = False
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/catalog-service/api/consumer/entitledCatalogItemViews?limit=100".format(host)
+url = "https://{0}/catalog-service/api/consumer/entitledCatalogItemViews?limit=500".format(host)
 request = rw.getUrl(url,headers)
 
 print request["metadata"]
