@@ -5,12 +5,12 @@ import sys
 import json
 import time
 import requests
-
+import datetime
 import urllib
 
-import rw
+from collections import defaultdict
 
-import json
+import rw
 
 start = int(time.time())
 
@@ -22,38 +22,36 @@ showUrl = True
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
+maxMachines = sys.argv[1]
+
+skipMachines = [
+"sc-powertest-004",
+"sc-powertest-034",
+"sc-powertest-031",
+"sc-powertest-219",
+"sc-powertest-023"]
+
 # Get list of machines
 
-url = "https://{0}/catalog-service/api/consumer/resources?$filter=resourceType/id eq 'Infrastructure.Virtual' and substringof('sc-power', name)&$orderby=name%20asc&limit=250".format(host)
+url = "https://{0}/catalog-service/api/consumer/resources?$filter=resourceType/id eq 'Infrastructure.Virtual' and substringof('sc-power', name)&$orderby=name%20asc&limit=5000".format(host)
 request = rw.getUrl(url,headers, showUrl=showUrl)
-
-from collections import defaultdict
+print request["metadata"]
 
 machines = defaultdict(list)
 
-print request["metadata"]
-
 resourceId = ""
+countMachines = 0
 
 for i in request["content"]:
 
 	machine = i["name"]
 	resourceId  = i["id"]
 
-	if ( machine == "sc-powertest-034" ):
+	# Check to see if 'machine' is in 'skipMachines' list
+	if (len(filter (lambda x : x == machine, skipMachines)) > 0):
 		print "Skip "+machine
 		continue
-
-	if ( machine == "sc-powertest-219" ):
-		print "Skip "+machine
-		continue
-
-	if ( machine == "sc-powertest-023" ):
-		print "Skip "+machine
-		continue
-
-	machines[i["name"]].append(i["id"]) 
-
+	
 	gUrl = ""
 	pUrl = ""
 	action = ""
@@ -90,15 +88,22 @@ for i in request["content"]:
 
 	if ( gUrl == "" ):
 		print machine+" : No power cycle action found"
-		exit(1)
+		continue
 
+	machines[i["name"]].append(i["id"]) 
 	machines[i["name"]].append(action)	
 	machines[i["name"]].append(gUrl)  	
 	machines[i["name"]].append(pUrl)	
 
+	countMachines += 1
+	if ( countMachines == int(maxMachines) ):
+		break
+
+# Data collection finished
+
 datacollect = int(time.time())
-elapsed = datacollect - start 
-print "Elapsed time for data collection : "+str(elapsed)+" seconds"
+
+# Submit action requests
 
 for name in machines.keys():
 	print machines[name][1]+" request for "+name
@@ -139,6 +144,10 @@ while waitFlag:
 	time.sleep(15) 
 
 
+print "Total machines : "+str(maxMachines)
+elapsed = datacollect - start 
+print "Elapsed time for data collection : "+str(elapsed)+" seconds "+str(datetime.timedelta(seconds=elapsed))
+
 end = int(time.time())
 elapsed = end - start 
-print "Elapsed time : "+str(elapsed)+" seconds"
+print "Total elapsed time : "+str(elapsed)+" seconds "+str(datetime.timedelta(seconds=elapsed))
