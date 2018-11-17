@@ -4,6 +4,7 @@ import os
 import sys
 import json
 
+sys.path.append("../")
 import rw
 
 login = False 

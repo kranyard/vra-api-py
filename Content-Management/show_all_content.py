@@ -9,6 +9,8 @@ debug = False
 host=os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
+name = sys.argv[1]
+
 cmd="curl --insecure -H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"  https://{1}/content-management-service/api/contents?limit=9999 2> /dev/null".format(id,host)
 
 stream = os.popen(cmd)
@@ -20,6 +22,6 @@ if ( debug ):
         exit (0)
 
 for item in request['content']:
-        if (item['contentTypeId'] == "composite-blueprint"):
-                print "{0} - {1} - [{2}] {3}".format(item['id'],item['contentId'],item['description'],item['contentTypeId'])
+	if ( item['name'] == name) :
+		print "{0} {1} - {2} - [{3}] {4}".format(item["name"], item['id'],item['contentId'],item['description'],item['contentTypeId'])
 
