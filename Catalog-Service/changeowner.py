@@ -14,9 +14,9 @@ host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
 machine = urllib.quote(sys.argv[1])
-action = "Reconfigure"
+user = sys.argv[2]
 
-showUrl = False
+showUrl = True
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
@@ -29,32 +29,22 @@ this_id = c ['id']
 parent = c['parentResourceRef']
 parent_id = parent['id']
 
-tenantLabel=c['organization']['tenantLabel']
-tenantRef=c['organization']['tenantRef']
-subtenantLabel=c['organization']['subtenantLabel']
-subtenantRef=c['organization']['subtenantRef']
+url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host,parent_id)
+r = rw.getUrl(url,headers, showUrl=showUrl)
 
-url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host,this_id)
-request = rw.getUrl(url,headers, showUrl=showUrl)
-
-#print json.dumps(request)
-
-for c in request['links']:
-	#print c['rel']
-	if ("Reconfigure" in c['rel']): 
+for c in r['links']:
+	if ("changeowner" in c['rel']): 
 		if ("GET" in c['rel']):
 			gUrl=c['href']
 		if ("POST" in c['rel']):
 			pUrl=c['href']
 
+
 request = rw.getUrl(gUrl,headers, showUrl=showUrl)
 
-print json.dumps(request)
-
-exit(1)
-
-request['data']['memory'] = 4096
+owner = {"type":"entityRef", "classId":"principal", "id":user, "label":""}
+request["data"]["provider-NewOwner"] = owner
 
 r = rw.postUrl(pUrl, headers, json.dumps(request), showUrl=showUrl)
-
 print r
+

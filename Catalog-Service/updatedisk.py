@@ -14,11 +14,14 @@ host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
 machine = urllib.quote(sys.argv[1])
+action = "Reconfigure"
+
+showUrl = True
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 url = "https://{0}/catalog-service/api/consumer/resources?$filter=name%20eq%20'{1}'".format(host,machine)
-request = rw.getUrl(url,headers)
+request = rw.getUrl(url,headers, showUrl=showUrl)
 
 c = request["content"][0]
 this_id = c ['id']
@@ -31,16 +34,25 @@ tenantRef=c['organization']['tenantRef']
 subtenantLabel=c['organization']['subtenantLabel']
 subtenantRef=c['organization']['subtenantRef']
 
-url = "https://{0}/catalog-service/api/consumer/resources/{1}/actions".format(host,parent_id)
-request = rw.getUrl(url,headers)
+url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host,this_id)
+request = rw.getUrl(url,headers, showUrl=showUrl)
 
-print parent['label']
-for c in request['content']:
-	print "  ",c['name']
+#print json.dumps(request)
 
-url = "https://{0}/catalog-service/api/consumer/resources/{1}/actions".format(host,this_id)
-request = rw.getUrl(url,headers)
+for c in request['links']:
+	#print c['rel']
+	if ("Reconfigure" in c['rel']): 
+		if ("GET" in c['rel']):
+			gUrl=c['href']
+		if ("POST" in c['rel']):
+			pUrl=c['href']
 
-print machine
-for c in request['content']:
-	print "  ",c['name'], c['id']
+request = rw.getUrl(gUrl,headers, showUrl=showUrl)
+
+#request["data"]["disks"][1]["data"]["size"] = "5"
+del request["data"]["disks"][1]
+
+print json.dumps(request)
+
+r = rw.postUrl(pUrl, headers, json.dumps(request), showUrl=showUrl)
+print r

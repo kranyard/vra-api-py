@@ -31,10 +31,7 @@ res = rw.getUrl(url,headers)
 e = res['requestData']['entries']
 
 for i in e:
-	if i['value'] is None:
-		print i['key'], "[None]"
-	else:
-		print i['key'], "[",i['value']['value'],"]"
+	print json.dumps(i)
 
 #	if ( i['key'] == "provider-Cafe.Shim.VirtualMachine.Reconfigure.UpdatedMemorySize" ):
 #	if ( i['key'] == "provider-Cafe.Shim.VirtualMachine.Reconfigure.UpdatedTotalStorageSize" ):

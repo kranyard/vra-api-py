@@ -16,7 +16,7 @@ id = os.environ['VRATOKEN']
 machine = urllib.quote(sys.argv[1])
 action = "Reconfigure"
 
-showUrl = False
+showUrl = True
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
@@ -49,12 +49,18 @@ for c in request['links']:
 
 request = rw.getUrl(gUrl,headers, showUrl=showUrl)
 
-print json.dumps(request)
+newDisk = request["data"]["disks"][0]
+newDisk["data"]["label"] = "Hard Disk 2"
+del(newDisk["data"]["externalId"])
+print json.dumps(newDisk)
+request["data"]["disks"].append(newDisk)
 
-exit(1)
+#del(request["data"]["disks"][0]["data"]["externalId"])
+#request["data"]["disks"][0]["data"]["size"] = 1
+#request["data"]["disks"][0]["data"]["driveLetter"] = "G:"
+#request["data"]["disks"][0]["data"]["label"] = "Disk2"
 
-request['data']['memory'] = 4096
+#print json.dumps(request)
 
 r = rw.postUrl(pUrl, headers, json.dumps(request), showUrl=showUrl)
-
 print r

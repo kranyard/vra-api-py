@@ -22,12 +22,11 @@ debug = True
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 url = "https://{0}/advanced-designer-service/api/resourceOperations?limit=500".format(host, tenant)
-request = rw.getUrl(url,headers)
+request = rw.getUrl(url,headers, showUrl=False)
 
-print request["metadata"]
+#print request["metadata"]
 
 if ( debug ):
-	pp.pprint(request)
 	print json.dumps(request)
 	exit (0)
 
