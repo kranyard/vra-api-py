@@ -32,8 +32,8 @@ url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host,r
 request = rw.getUrl(url,headers)
 
 for c in request['links']:
-	#print c['rel']
-	if ("PowerOff" in c['rel']): 
+	print c['rel']
+	if ("xPowerOff" in c['rel']): 
 		if ("GET" in c['rel']):
 			gUrl=c['href']
 		if ("POST" in c['rel']):
