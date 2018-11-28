@@ -16,13 +16,14 @@ id = os.environ['VRATOKEN']
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 url = "https://{0}/catalog-service/api/consumer/resources?$filter=owners/ref+eq+'{1}'&limit={2}".format(host, username, pageSize)
-url = "https://{0}/catalog-service/api/consumer/resources?limit={2}".format(host, username, pageSize)
+#url = "https://{0}/catalog-service/api/consumer/resources?limit={1}".format(host, pageSize)
 
 flag=True
 while flag:
 
 	request = rw.getUrl(url,headers)
-	print json.dumps(request)
+
+	print request["metadata"]
 
 	url=False
 	for l in request["links"]:
@@ -33,8 +34,6 @@ while flag:
 		flag = False
 
 	for x in request["content"]:
-		print x['name']
-		#rw.showProperties(x)
 		if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
 			print x['name']
 			#print x['name'], x['providerBinding']['bindingId'] ,x["requestId"], x["resourceTypeRef"]["label"]
