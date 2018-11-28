@@ -1,0 +1,24 @@
+{
+    "parameters": [
+        {
+            "type": "string",
+            "scope": "local",
+            "name": "tenant",
+            "value": {
+                "string": {
+                    "value": "swisscom"
+                }
+            }
+        },
+	{
+            "type": "boolean",
+            "scope": "local",
+            "name": "isVCACCafeHost",
+            "value": {
+                "boolean": {
+                    "value": true
+                }
+            }
+        }
+    ]
+}

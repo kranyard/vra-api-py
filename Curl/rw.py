@@ -10,6 +10,7 @@ def getUrl(url,headers,showUrl=showUrl):
 		print "GET: "+url
 
 	cmd="curl -s --insecure {0} \'{1}\'".format(headers,url)
+	print cmd
 
 	stream = os.popen(cmd)
 
@@ -21,6 +22,7 @@ def postUrl(url,headers,data,showUrl=showUrl):
 		print "POST: "+url
 		print data
 	cmd="curl -s --insecure {0} --data {1} \'{2}\'".format(headers,data, url)
+	print cmd
 
 	stream = os.popen(cmd)
 
