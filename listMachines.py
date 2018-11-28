@@ -6,7 +6,7 @@ import json
 
 import rw
 
-#name = sys.argv[1]
+username = sys.argv[1]
 
 pageSize=1000
 
@@ -15,15 +15,14 @@ id = os.environ['VRATOKEN']
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/catalog-service/api/consumer/resources?limit={1}".format(host,pageSize)
-#url = "https://{0}/catalog-service/api/consumer/resources?$filter=name eq '{1}'".format(host, name)
-
+url = "https://{0}/catalog-service/api/consumer/resources?$filter=owners/ref+eq+'{1}'&limit={2}".format(host, username, pageSize)
+url = "https://{0}/catalog-service/api/consumer/resources?limit={2}".format(host, username, pageSize)
 
 flag=True
 while flag:
 
 	request = rw.getUrl(url,headers)
-	print json.dumps(request["metadata"])
+	print json.dumps(request)
 
 	url=False
 	for l in request["links"]:
@@ -34,6 +33,7 @@ while flag:
 		flag = False
 
 	for x in request["content"]:
+		print x['name']
 		#rw.showProperties(x)
 		if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
 			print x['name']

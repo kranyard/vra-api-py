@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+import operator
+import os
+import sys
+import json
+import time
+
+import json
+
+import rw
+
+host = os.environ['VRAHOST']
+id = os.environ['VRATOKEN']
+
+debug = False
+
+headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
+
+url = "https://{0}/catalog-service/api/consumer/entitledCatalogItemViews?limit=500".format(host)
+request = rw.getUrl(url,headers, showUrl=False)
+
+#print request["metadata"]
+
+if ( debug ):
+	print json.dumps(request)
+	exit (0)
+
+for item in request['content']:
+	print "CATALOG",item['catalogItemId']+"	"+item['name']+" Icon: "+item['iconId']
+	if (False):
+		for key, value in item.items():
+			if isinstance(value, dict):
+				for k, v in value.items():	
+					print "  ",k,"::=",v
+			elif isinstance(value, list):
+				print "list"
+				for v in value:	
+					print v
+			else:
+				print key, ':=', value
+		print '-----'
