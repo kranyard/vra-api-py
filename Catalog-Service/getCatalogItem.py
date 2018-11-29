@@ -48,8 +48,10 @@ def main():
     id = os.environ['VRATOKEN']
     headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-    url = "https://{0}//catalog-service/api/catalogItems?`$filter=name eq '{1}'".format(host,catalogName)
+    url = "https://{0}//catalog-service/api/catalogItems?$filter=name eq '{1}'".format(host,catalogName)
     request = rw.getUrl(url,headers, showUrl=showUrl)
+
+    print request["content"][0]["name"]
 
     if debug:
 	    print json.dumps(request)
