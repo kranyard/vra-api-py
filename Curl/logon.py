@@ -42,7 +42,7 @@ data = "\'{{\"username\":\"{0}\",\"password\":\"{1}\",\"tenant\":\"{2}\"}}\'".fo
 url="https://{0}/identity/api/tokens".format(host)
 
 request = rw.postUrl(url, headers, data, showUrl=True)
-print json.dumps(request)
+#print json.dumps(request)
 
 # Set OS environment vars
 os.environ['VRATOKEN'] = request["id"]
