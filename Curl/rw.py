@@ -9,7 +9,7 @@ def getUrl(url,headers,showUrl=showUrl):
 	if (showUrl):
 		print "GET: "+url
 
-	cmd="curl -s -X GET --insecure {0} \'{1}\'".format(headers,url)
+	cmd="curl -s -X GET --insecure {0} {1}".format(headers,url)
 	print cmd
 
 	stream = os.popen(cmd)

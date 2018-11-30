@@ -10,6 +10,8 @@ import pprint
 
 import argparse
 
+import urllib
+
 sys.path.append("../")
 import rw
 
@@ -55,7 +57,7 @@ def main():
     headers = "-H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"".format(id)
     #headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-    url = "https://{0}//catalog-service/api/catalogItems?$filter=name eq '{1}'".format(host,catalogName)
+    url = "https://{0}//catalog-service/api/catalogItems?$filter=name eq \"{1}\"".format(host,catalogName)
     request = rw.getUrl(url,headers, showUrl=showUrl)
 
     print request["content"][0]["name"]
