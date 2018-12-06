@@ -41,12 +41,16 @@ data = "\'{{\"username\":\"{0}\",\"password\":\"{1}\",\"tenant\":\"{2}\"}}\'".fo
 
 url="https://{0}/identity/api/tokens".format(host)
 
-request = rw.postUrl(url, headers, data, showUrl=True)
-#print json.dumps(request)
+resp = rw.postUrl(url, headers, data, showUrl=True)
+#print json.dumps(resp)
 
-# Set OS environment vars
-os.environ['VRATOKEN'] = request["id"]
+print "Session started as ["+username+"] at ["+host+"] and tenant ["+tenant+"]"
+print "Expires at : "+resp["expires"]
+print "ID Token : ", resp["id"]
+
+os.environ['VRATOKEN'] = resp["id"]
+os.environ['VRATENANT'] = tenant
 os.environ['VRAHOST'] = host
-
-# Spawn new instance shell
+os.environ['VRAUSER'] = username
+os.environ['VRAEXPIRY'] = resp["expires"]
 os.system("/bin/bash -i") 

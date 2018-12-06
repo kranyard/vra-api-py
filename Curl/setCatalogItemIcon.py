@@ -12,6 +12,8 @@ import argparse
 
 import urllib
 
+import pipes
+
 sys.path.append("../")
 import rw
 
@@ -70,9 +72,7 @@ def main():
     request["content"][0]["iconId"] = iconId
 
     url = "https://{0}//catalog-service/api/catalogItems/{1}".format(host,catId)
-    request = rw.putUrl(url,headers, showUrl=True, data=json.dumps(request["content"][0]))
-
-    print request
+    request = rw.putUrl(url,headers, showUrl=True, data=pipes.quote(json.dumps(request["content"][0])))
 
 if __name__ == '__main__':
 	main()
