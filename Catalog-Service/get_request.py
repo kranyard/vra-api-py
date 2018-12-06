@@ -14,7 +14,7 @@ id = os.environ['VRATOKEN']
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 url="https://{0}/catalog-service/api/consumer/requests?$filter=requestNumber+eq+{1}".format(host, requestNumber)
-request = rw.getUrl(url,headers)
+request = rw.getUrl(url,headers, showUrl = False)
 
-rw.showProperties(request)
+print json.dumps(request)
 
