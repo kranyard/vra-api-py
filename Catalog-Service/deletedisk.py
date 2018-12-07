@@ -48,11 +48,9 @@ for d in request["data"]["disks"]:
 	print d["data"]["size"]
 	print json.dumps(d)
 
-request["data"]["disks"][1]["data"]["size"] = 5
+del request["data"]["disks"][1]
 
 request["Cafe.Shim.VirtualMachine.Reconfigure.Requestor"] = True
-
-#del request["data"]["disks"][2]
 
 print json.dumps(request)
 

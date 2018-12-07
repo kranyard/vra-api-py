@@ -5,6 +5,7 @@ import sys
 import json
 import time
 import urllib
+import copy
 
 import json
 
@@ -16,7 +17,7 @@ id = os.environ['VRATOKEN']
 machine = urllib.quote(sys.argv[1])
 action = "Reconfigure"
 
-showUrl = True
+showUrl = False
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
@@ -28,11 +29,6 @@ this_id = c ['id']
 
 parent = c['parentResourceRef']
 parent_id = parent['id']
-
-tenantLabel=c['organization']['tenantLabel']
-tenantRef=c['organization']['tenantRef']
-subtenantLabel=c['organization']['subtenantLabel']
-subtenantRef=c['organization']['subtenantRef']
 
 url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host,this_id)
 request = rw.getUrl(url,headers, showUrl=showUrl)
@@ -49,18 +45,19 @@ for c in request['links']:
 
 request = rw.getUrl(gUrl,headers, showUrl=showUrl)
 
-newDisk = request["data"]["disks"][0]
+newDisk = copy.deepcopy(request["data"]["disks"][0])
+
 newDisk["data"]["label"] = "Hard Disk 2"
-del(newDisk["data"]["externalId"])
-print json.dumps(newDisk)
+newDisk["data"]["size"] = 4
+newDisk["data"]["externalId"] = None
+
+#print json.dumps(newDisk)
+
 request["data"]["disks"].append(newDisk)
 
-#del(request["data"]["disks"][0]["data"]["externalId"])
-#request["data"]["disks"][0]["data"]["size"] = 1
-#request["data"]["disks"][0]["data"]["driveLetter"] = "G:"
-#request["data"]["disks"][0]["data"]["label"] = "Disk2"
+request["Cafe.Shim.VirtualMachine.Reconfigure.Requestor"] = True
 
-#print json.dumps(request)
+print json.dumps(request)
 
 r = rw.postUrl(pUrl, headers, json.dumps(request), showUrl=showUrl)
 print r
