@@ -60,7 +60,12 @@ def showTables(tableName):
 
 pp = pprint.PrettyPrinter(indent=4)
 
-conn = psycopg2.connect(host="vra-01a.corp.local",database="vcac", user="vcac", password="nD7KlfAojxotuZl2")
+psqlhost = os.environ['PSQLHOST']
+psqldb = os.environ['PSQLDB']
+psqluser = os.environ['PSQLUSER']
+psqlpwd = os.environ['PSQLPWD']
+
+conn = psycopg2.connect(host=psqlhost,database=psqldb, user=psqluser, password=psqlpwd)
 
 cur = conn.cursor()
 cur.execute("select * from cat_icon")
