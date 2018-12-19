@@ -4,61 +4,12 @@ import os
 import sys
 import json
 
-import pprint
-
 import psycopg2
 
-def showProperties(item):
-        _showProps(item, "", 0)
-
-def _showProps(item, k, l):
-        p1 = ""
-        p2 = ""
-        for x in range(0,l):
-                p1 += "  "
-
-        for x in range(0,l-1):
-                p2 += "  "
-
-        if isinstance(item, dict):
-                print p2+"Dictionary : {"+k+"}"
-                for key, value in item.items():
-                        if (isinstance(value, dict) or isinstance(value, list)):
-                                _showProps(value, str(key),l+1)
-                        else :
-                                print p1+" ["+str(key)+"] ["+str(value)+"]"
-        elif isinstance(item, list):
-                print p2+"List : {"+k+"}"
-                for value in item:
-                        if (isinstance(value, dict) or isinstance(value, list)):
-                                _showProps(value, "",l+1)
-                        else :
-                                print p1+"L "+str(value)
-        else:
-                # Scalar
-                if ( k != "" ):
-                        print p1+"SCALAR {"+k+"} "+str(item)
-                else:
-                        print p1+"S "+str(item)
-
-def showTables(tableName):
-
-	q = """                              
-	SELECT column_name, data_type, is_nullable
-	FROM information_schema.columns
-	WHERE table_name = %s;
-	"""
-
-	cur = conn.cursor()
-	cur.execute(q, (tableName,))  # (table_name,) passed as tuple
-	result = cur.fetchall()
-
-	for i in result:
-		print i[0]
-	cur.close()
-
-
-pp = pprint.PrettyPrinter(indent=4)
+machineName = sys.argv[1]
+component = sys.argv[2]
+newStorageMaxValue = sys.argv[3]
+newMaxVolumesDerivedValue = sys.argv[4]
 
 psqlhost = os.environ['PSQLHOST']
 psqldb = os.environ['PSQLDB']
@@ -67,83 +18,77 @@ psqlpwd = os.environ['PSQLPWD']
 
 conn = psycopg2.connect(host=psqlhost,database=psqldb, user=psqluser, password=psqlpwd)
 
-machineName = sys.argv[1]
-
 cur = conn.cursor()
-cur.execute("select parentresource_id from cat_resource where name = '{0}'".format(machineName))
+
+sql = "select parentresource_id from cat_resource where name = '{0}'".format(machineName)
+print sql
+
+cur.execute(sql)
 out = ((cur.fetchone())[0])
 cur.close()
 
 resourceId = out
 
 cur = conn.cursor()
-cur.execute("select eff_schema from comp_deployment where cafe_resource_id  = '{0}'".format(resourceId))
+
+sql = "select eff_schema from comp_deployment where cafe_resource_id  = '{0}'".format(resourceId)
+print sql
+
+cur.execute(sql)
 out = ((cur.fetchone())[0])
+cur.close()
 
-p1 = json.loads(out)
-
-#showProperties(props["fields"])
+payload = json.loads(out)
 
 vals = ""
 
-x=0
-for i in p1["fields"]:
-	print i["label"]
-	if i["label"] == "CentOS_6.3":
-		print x
+componentIdx=0
+for i in payload["fields"]:
+	if i["label"] == component:
 		vals = i
-	x += 1
+		break
+#componentIdx is set to index in array for selected component
+	componentIdx += 1
 
 props = ""
 
-x=0
-for i in vals["dataType"]["schema"]["fields"]:
-	#print i["id"]
+storageIdx=0
+for i in payload["fields"][componentIdx]["dataType"]["schema"]["fields"]:
 	if i["id"] == "storage":
-		print x
-		props = i	
-	x += 1
+		break
+	storageIdx += 1
 
-p = ""
 
-print
-print "storage"
-x=0
-for i in props["state"]["facets"]:
-	print i["type"], i["value"]["value"]["value"]
+storageMaxValueIdx=0
+
+
+for i in payload["fields"][componentIdx]["dataType"]["schema"]["fields"][storageIdx]["state"]["facets"]:
 	if i["type"] == "maxValue":
-		p = i["value"]["value"]["value"]
-		print x
-	x += 1
+		break 
+	storageMaxValueIdx += 1
 
-print p1["fields"][0]["dataType"]["schema"]["fields"][8]["state"]["facets"][0]["value"]["value"]["value"]
-p1["fields"][0]["dataType"]["schema"]["fields"][8]["state"]["facets"][0]["value"]["value"]["value"] = 20
+print "Current max storage : ",payload["fields"][componentIdx]["dataType"]["schema"]["fields"][storageIdx]["state"]["facets"][storageMaxValueIdx]["value"]["value"]["value"]
+payload["fields"][componentIdx]["dataType"]["schema"]["fields"][storageIdx]["state"]["facets"][storageMaxValueIdx]["value"]["value"]["value"] = int(newStorageMaxValue)
 
-x=0
-for i in vals["dataType"]["schema"]["fields"]:
-	#print i["id"]
+maxVolumesIdx=0
+for i in payload["fields"][componentIdx]["dataType"]["schema"]["fields"]:
 	if i["id"] == "max_volumes":
-		props = i	
-		print x
-	x += 1
+		break
+	maxVolumesIdx += 1
 
-print
-print "max_volumes"
-x=0
-for i in props["state"]["facets"]:
+
+maxVolumesDerivedValueIdx=0
+for i in payload["fields"][componentIdx]["dataType"]["schema"]["fields"][maxVolumesIdx]["state"]["facets"]:
 	if i["type"] == "derivedValue":
-		p = i["value"]["value"]["value"]
-		print x
-	x += 1
+		break
+	maxVolumesDerivedValueIdx += 1
 
-print p1["fields"][0]["dataType"]["schema"]["fields"][37]["state"]["facets"][0]["value"]["value"]["value"]
-p1["fields"][0]["dataType"]["schema"]["fields"][37]["state"]["facets"][0]["value"]["value"]["value"] = 2
-
-cur.close()
+print "Current max_volumes : ",payload["fields"][componentIdx]["dataType"]["schema"]["fields"][maxVolumesIdx]["state"]["facets"][maxVolumesDerivedValueIdx]["value"]["value"]["value"]
+payload["fields"][componentIdx]["dataType"]["schema"]["fields"][maxVolumesIdx]["state"]["facets"][maxVolumesDerivedValueIdx]["value"]["value"]["value"] = int(newMaxVolumesDerivedValue)
 
 
 cur = conn.cursor()
-cur.execute("UPDATE comp_deployment SET eff_schema=(%s) WHERE cafe_resource_id = (%s)", (json.dumps(p1),resourceId,));
+cur.execute("UPDATE comp_deployment SET eff_schema=(%s) WHERE cafe_resource_id = (%s)", (json.dumps(payload),resourceId,));
 conn.commit()
 cur.close()
 

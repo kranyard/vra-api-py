@@ -21,8 +21,8 @@ resourceId = ((cur.fetchone())[0])
 cur.close()
 
 cur = conn.cursor()
-cur.execute("select eff_schema from comp_deployment where cafe_resource_id  = '{0}'".format(resourceId))
-eff_schema = ((cur.fetchone())[0])
+cur.execute("select eff_state from comp_deployment where cafe_resource_id  = '{0}'".format(resourceId))
+eff_state = ((cur.fetchone())[0])
 cur.close()
 
-print eff_schema
+print eff_state
