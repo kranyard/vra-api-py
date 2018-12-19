@@ -17,4 +17,4 @@ url="https://{0}/catalog-service/api/consumer/requests?$filter=requestNumber+eq+
 
 request = rw.getUrl(url,headers, showUrl=False)
 
-print (json.dumps(request))
+print json.dumps(request)

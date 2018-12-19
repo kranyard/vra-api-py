@@ -1,0 +1,54 @@
+{
+    "parameters": [
+        {
+            "type": "string",
+            "scope": "local",
+            "name": "ServerName",
+            "value": {
+                "string": {
+                    "value": "vcac-iaas-01c"
+                }
+            }
+        },
+        {
+            "type": "string",
+            "scope": "local",
+            "name": "ServerIP",
+            "value": {
+                "string": {
+                    "value": "192.168.110.89"
+                }
+            }
+        },
+        {
+            "type": "string",
+            "scope": "local",
+            "name": "ServerDNS",
+            "value": {
+                "string": {
+                    "value": "corp.local"
+                }
+            }
+        },
+        {
+            "type": "string",
+            "scope": "local",
+            "name": "ServerID",
+            "value": {
+                "string": {
+                    "value": "vcac-iaas-01d.corp.local"
+                }
+            }
+        },
+        {
+            "type": "string",
+            "scope": "local",
+            "name": "ServerOwner",
+            "value": {
+                "string": {
+                    "value": "administrator"
+                }
+            }
+        }
+    ]
+}

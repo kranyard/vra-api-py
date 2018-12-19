@@ -15,15 +15,8 @@ url = 'https://api.mgmt.cloud.vmware.com/deployment/api/deployments'
 
 res = rw.getUrl(url, headers)
 
-rw.showProperties(res)
+#print json.dumps(res)
 
-for r in res['results']:
-	print r['name'], r['createdBy']
-
-	print r['resourceLinks'][0] 
-
-	url = "https://api.mgmt.cloud.vmware.com/{0}".format( r['resourceLinks'][0] )
-	res = rw.getUrl(url, headers)
-
-	rw.showProperties(res)
+for r in res["results"]:
+	print r['name'], r['createdBy'], r["id"]
 

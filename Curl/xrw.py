@@ -9,7 +9,7 @@ def getUrl(url,headers,showUrl=showUrl):
 	if (showUrl):
 		print "GET: "+url
 
-	cmd="curl -s -X GET --insecure {0} {1}".format(headers,url)
+	cmd="curl -s -X GET --insecure {0} \'{1}\'".format(headers,url)
 	print cmd
 
 	stream = os.popen(cmd)
@@ -39,9 +39,9 @@ def postUrl(url,headers,data,showUrl=showUrl):
 
 	stream = os.popen(cmd)
 
-	return (stream.read())
-	#request = json.loads(stream.read())
-	#return request
+	#print stream.read()
+	request = json.loads(stream.read())
+	return request
 
 def putUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):

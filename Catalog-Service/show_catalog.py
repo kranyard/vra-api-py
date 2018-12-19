@@ -9,15 +9,22 @@ import json
 
 import rw
 
+pageSize=500
+
 host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
 debug = False
+showUrl = True
+entitledView = False
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/catalog-service/api/consumer/entitledCatalogItemViews?limit=500".format(host)
-request = rw.getUrl(url,headers, showUrl=False)
+if entitledView:
+	url = "https://{0}/catalog-service/api/consumer/entitledCatalogItemViews?limit={1}".format(host, pageSize)
+else:
+	url = "https://{0}/catalog-service/api/consumer/catalogItems?limit={1}".format(host, pageSize)
+
 
 #print request["metadata"]
 
@@ -25,17 +32,18 @@ if ( debug ):
 	print json.dumps(request)
 	exit (0)
 
-for item in request['content']:
-	print "CATALOG",item['catalogItemId']+"	"+item['name']+" Icon: "+item['iconId']
-	if (False):
-		for key, value in item.items():
-			if isinstance(value, dict):
-				for k, v in value.items():	
-					print "  ",k,"::=",v
-			elif isinstance(value, list):
-				print "list"
-				for v in value:	
-					print v
-			else:
-				print key, ':=', value
-		print '-----'
+while url:
+
+	request = rw.getUrl(url,headers, showUrl=showUrl)
+	print json.dumps(request["metadata"])
+
+	url=False
+	for l in request["links"]:
+		if l["rel"] == "next":
+			url = l["href"]
+
+	for item in request['content']:
+		if entitledView:
+			print item['name']+" - catalogId: ["+item['catalogItemId']+"] - iconId : ["+item['iconId']+"]"
+		else:
+			print item['name']+" - catalogId: ["+item['id']+"] - iconId : ["+item['iconId']+"]"
