@@ -7,6 +7,11 @@ import json
 import rw
 
 username = sys.argv[1]
+machinename = sys.argv[2]
+
+showUrl = False
+
+simple = True
 
 pageSize=1000
 
@@ -15,15 +20,16 @@ id = os.environ['VRATOKEN']
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/catalog-service/api/consumer/resources?$filter=owners/ref+eq+'{1}'&limit={2}".format(host, username, pageSize)
+#url = "https://{0}/catalog-service/api/consumer/resources?$filter=owners/ref+eq+'{1}'&limit={2}".format(host, username, pageSize)
 #url = "https://{0}/catalog-service/api/consumer/resources?limit={1}".format(host, pageSize)
+url = "https://{0}/catalog-service/api/consumer/resources?$filter=owners/ref+eq+'{1}'+and+substringof('{2}', name)&limit={3}".format(host, username, machinename, pageSize )
 
 flag=True
 while flag:
 
-	request = rw.getUrl(url,headers)
+	request = rw.getUrl(url,headers, showUrl=showUrl)
 
-	print request["metadata"]
+	#print request["metadata"]
 
 	url=False
 	for l in request["links"]:
@@ -35,17 +41,30 @@ while flag:
 
 	for x in request["content"]:
 		if ( x["resourceTypeRef"]["label"] == "Virtual Machine" ):
-			print x['name']
-			#print x['name'], x['providerBinding']['bindingId'] ,x["requestId"], x["resourceTypeRef"]["label"]
-			requestId = x["requestId"]
 
-			#url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host, requestId)
-			#r = rw.getUrl(url,headers )
-			#rw.showProperties(r["content"][0])
-			#print "Endpoint Ext ref", r["content"][0]["data"]["endpointExternalReferenceId"]
+			if ( simple ):
+				print x["name"]
+			else:
+				resourceId = x["id"]
+				#print "Resource ID : "+resourceId ;
 
-			#for c in r["content"]: 
-			#	print "Name: "+c["name"]
-			#	if 'data' in c:
-			#		if 'ip_address' in c["data"]:
-			#			print "   ",c["data"]["ip_address"]
+				url = "https://{0}/catalog-service/api/consumer/resourceViews/{1}".format(host, resourceId)
+				request = rw.getUrl(url,headers, showUrl=showUrl)
+
+				print request["name"],request["status"]
+
+				#print x['name'], x['providerBinding']['bindingId'] ,x["requestId"], x["resourceTypeRef"]["label"]
+				#requestId = x["requestId"]
+
+				#url = "https://{0}/catalog-service/api/consumer/requests/{1}/resourceViews".format(host, requestId)
+				#r = rw.getUrl(url,headers , showUrl=showUrl)
+				#print "Endpoint Ext ref", r["content"][0]["data"]["endpointExternalReferenceId"]
+
+				#for c in r["content"]: 
+				#	print "Name: "+c["name"]
+				#	if 'data' in c:
+				#		if 'ip_address' in c["data"]:
+				#			print "   ",c["data"]["ip_address"]
+
+
+
