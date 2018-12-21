@@ -4,6 +4,7 @@ import os
 import sys
 import json
 import time
+import urllib
 
 import json
 import pprint
@@ -24,9 +25,13 @@ debug = False
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-#url = "https://{0}/reservation-service/api/reservations?$filter=substringof('QA',name)".format(host)
+#url = "https://{0}/reservation-service/api/reservations?limit={1}".format(host, pageSize)
+#url = "https://{0}/reservation-service/api/reservations?$filter=substringof('IPAM',name)".format(host)
+#url = "https://{0}/reservation-service/api/reservations?$filter=name eq 'Dev Cluster Reservation'".format(host)
 
-url = "https://{0}/reservation-service/api/reservations?limit={1}".format(host, pageSize)
+name = "Dev Cluster Reservation"
+url = "https://{0}/reservation-service/api/reservations/?$filter=name eq '{1}'".format(host, name)
+
 
 flag=True
 while flag:
