@@ -14,7 +14,9 @@ id = os.environ['VRATOKEN']
 
 name = sys.argv[1]
 
-pageSize=100
+username = name
+
+pageSize=5000
 
 showUrl = False
 
@@ -22,6 +24,8 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 
 #url = "https://{0}/catalog-service/api/consumer/resourceViews?$filter=substringof('{1}', name)&limit={2}".format(host, name, pageSize)
 url = "https://{0}/catalog-service/api/consumer/resourceViews?$filter=substringof('{1}', name)&withExtendedData=true&withOperations=true&limit={2}".format(host, name, pageSize)
+url = "https://{0}/catalog-service/api/consumer/resourceViews?limit={2}".format(host, name, pageSize)
+url = "https://{0}/catalog-service/api/consumer/resourceViews?$filter=owners/ref+eq+'{1}'&limit={2}".format(host, username, pageSize)
 
 while url:
 
@@ -30,7 +34,7 @@ while url:
 	#print request["metadata"]
 
 	for c in request["content"]:
-		print c["name"],c["status"]
+		print c["name"],c["status"],c["resourceType"]
 
 	url=False
 	for l in request["links"]:

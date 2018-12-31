@@ -1,0 +1,9 @@
+<% if (requests.length) {
+  %><ul>
+    <% requests.forEach((r) => {
+      %>
+	<li><%= r.name %> : <%= r.status %></li>
+      <%
+    }) %>
+  </ul><%
+} %>

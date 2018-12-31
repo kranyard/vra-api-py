@@ -16,6 +16,8 @@ url = "https://{0}/catalog-service/api/consumer/resources/types/composition.reso
 
 r = rw.getUrl(url,headers)
 
+print r["metadata"]
+
 parents = r["content"]
 
 for x in parents:
