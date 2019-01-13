@@ -11,7 +11,7 @@ machinename = sys.argv[2]
 
 showUrl = False
 
-simple = True
+simple = False
 
 pageSize=1000
 
@@ -60,11 +60,11 @@ while flag:
 				#r = rw.getUrl(url,headers , showUrl=showUrl)
 				#print "Endpoint Ext ref", r["content"][0]["data"]["endpointExternalReferenceId"]
 
-				#for c in r["content"]: 
-				#	print "Name: "+c["name"]
-				#	if 'data' in c:
-				#		if 'ip_address' in c["data"]:
-				#			print "   ",c["data"]["ip_address"]
+				for c in r["content"]: 
+					print "Name: "+c["name"]
+					if 'data' in c:
+						if 'ip_address' in c["data"]:
+							print "   ",c["data"]["ip_address"]
 
 
 

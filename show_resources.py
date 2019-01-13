@@ -8,7 +8,7 @@ import rw
 
 username = sys.argv[1]
 
-showUrl = True
+showUrl = False
 
 host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
@@ -18,8 +18,8 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 url = "https://{0}/catalog-service/api/consumer/resources?$filter=owners/ref+eq+'{1}'+and+resourceType/name+eq+'Deployment'&limit=500".format(host, username)
 request = rw.getUrl(url,headers,showUrl=showUrl)
 
-#print json.dumps(request)
-#exit(1)
+print json.dumps(request)
+exit(1)
 
 print request["metadata"]
 
