@@ -7,58 +7,51 @@ import getpass
 import argparse
 import urllib
 
-showUrl = False
+import requests
+
+requests.packages.urllib3.disable_warnings()
+
+showUrl = True
 
 def getUrl(url,headers,showUrl=showUrl):
-	
-	cmd="curl -s -X GET --insecure {0} \"{1}\"".format(headers,url)
 	if (showUrl):
 		print "GET: "+url
-		#print cmd
-
-	stream = os.popen(cmd)
-
-	request = json.loads(stream.read())
-	return request
+	req = requests.get(url,headers=headers,verify=False)
+	return req.json()
 
 def deleteUrl(url,headers,showUrl=showUrl):
 	if (showUrl):
-		print "GET: "+url
-
-	cmd="curl -s -X DELETE --insecure {0} \'{1}\'".format(headers,url)
-	#print cmd
-
-	stream = os.popen(cmd)
-
-	print stream.read()
-	#request = json.loads(stream.read())
-	#return request
+		print "DELETE: "+url
+	r = requests.delete(url,headers=headers,verify=False)
+	return (r)
 
 def postUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):
 		print "POST: "+url
-		#print data
-	cmd="curl -s -X POST --insecure {0} --data {1} \'{2}\'".format(headers,data, url)
-	#print cmd
+		print data
+	r = requests.post(url,headers=headers,data=data,verify=False)
+	return(r)
 
-	stream = os.popen(cmd)
+	#print r.status_code
+	#print r.headers
 
-	s = stream.read()
-	return (json.loads(s))
+	#if ( r.status_code == 200 ):
+		#return r.json()
+
 
 def putUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):
-		print "PUT: "+url
-	print data
-	cmd="curl -s -X PUT --insecure {0} --data {1} \'{2}\'".format(headers,data, url)
-	#print cmd
+		print "POST: "+url
+		print data
+	r = requests.put(url,headers=headers,data=data,verify=False)
+	return(r)
 
-	stream = os.popen(cmd)
+	#print r.status_code
+	#print r.headers
 
-	print stream.read()
-	#request = json.loads(stream.read())
-	#return request
-
+	#if ( r.status_code == 200 ):
+		#return r.json()
+	
 
 def get_args():
     parser = argparse.ArgumentParser(
@@ -130,8 +123,9 @@ def main():
 
 	# Get logon token
 
-	headers = "-H \"Accept: application/json\" -H \"Content-Type: application/json\""
-	data = "\'{{\"username\":\"{0}\",\"password\":\"{1}\",\"tenant\":\"{2}\"}}\'".format(args.username,args.password,args.tenant)
+	values = { 'username':args.username, 'password':args.password, 'tenant':args.tenant }
+	data = json.dumps(values)
+	headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8'}
 
 	resp=postUrl("https://{0}/identity/api/tokens".format(args.host),data=data,headers=headers,showUrl=args.showUrl)
 
@@ -142,7 +136,7 @@ def main():
 	id = resp["id"]
 	host = args.host
 
-	headers = "-H \"Accept: application/json\" -H \"Content-Type: application/json\" -H \"Authorization: Bearer {0} \"".format(id)
+	headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 	url = "https://{0}/catalog-service/api/consumer/resources?limit={1}&%24filter=resourceType/name+eq+'Deployment'".format(host, args.pageSize)
 
