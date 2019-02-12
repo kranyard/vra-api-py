@@ -42,7 +42,7 @@ data = "\'{{\"username\":\"{0}\",\"password\":\"{1}\",\"tenant\":\"{2}\"}}\'".fo
 url="https://{0}/identity/api/tokens".format(host)
 
 resp = rw.postUrl(url, headers, data, showUrl=True)
-#print json.dumps(resp)
+print json.dumps(resp)
 
 print "Session started as ["+username+"] at ["+host+"] and tenant ["+tenant+"]"
 print "Expires at : "+resp["expires"]

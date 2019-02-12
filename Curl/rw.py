@@ -6,11 +6,11 @@ import json
 showUrl = True
 
 def getUrl(url,headers,showUrl=showUrl):
+
+	cmd="curl -s -X GET --insecure {0} \"{1}\"".format(headers,url)
 	if (showUrl):
 		print "GET: "+url
-
-	cmd="curl -s -X GET --insecure {0} {1}".format(headers,url)
-	print cmd
+		#print cmd
 
 	stream = os.popen(cmd)
 
@@ -22,7 +22,7 @@ def deleteUrl(url,headers,showUrl=showUrl):
 		print "GET: "+url
 
 	cmd="curl -s -X DELETE --insecure {0} \'{1}\'".format(headers,url)
-	print cmd
+	#print cmd
 
 	stream = os.popen(cmd)
 
@@ -33,22 +33,21 @@ def deleteUrl(url,headers,showUrl=showUrl):
 def postUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):
 		print "POST: "+url
-		print data
+		#print data
 	cmd="curl -s -X POST --insecure {0} --data {1} \'{2}\'".format(headers,data, url)
-	print cmd
+	#print cmd
 
 	stream = os.popen(cmd)
 
-	return (stream.read())
-	#request = json.loads(stream.read())
-	#return request
+	s = stream.read()
+	return (json.loads(s))
 
 def putUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):
 		print "PUT: "+url
 		print data
 	cmd="curl -s -X PUT --insecure {0} --data {1} \'{2}\'".format(headers,data, url)
-	print cmd
+	#print cmd
 
 	stream = os.popen(cmd)
 
