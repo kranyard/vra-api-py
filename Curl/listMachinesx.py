@@ -127,7 +127,12 @@ def main():
 	data = json.dumps(values)
 	headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8'}
 
-	resp=postUrl("https://{0}/identity/api/tokens".format(args.host),data=data,headers=headers,showUrl=args.showUrl)
+	r=postUrl("https://{0}/identity/api/tokens".format(args.host),data=data,headers=headers,showUrl=args.showUrl)
+	resp = r.json()
+
+	if "errors" in resp:
+		print json.dumps(resp)
+		exit(1)
 
 	#print "Session started as ["+args.username+"] at ["+args.host+"] and tenant ["+args.tenant+"]"
 	#print "Expires at : "+resp["expires"]
@@ -140,7 +145,7 @@ def main():
 
 	url = "https://{0}/catalog-service/api/consumer/resources?limit={1}&%24filter=resourceType/name+eq+'Deployment'".format(host, args.pageSize)
 
-	print "Machine, Deployment, ID, Machine ID, Request, Owner, IP address, Memory, BlueprintName, Reservation, State"
+	print "Machine, Deployment, ID, Machine ID, Owner, IP address, Memory, BlueprintName, Reservation, State"
 
 	while url:
 
@@ -158,9 +163,10 @@ def main():
 
 			resourceId = deployment["id"]
 			requestId = deployment["requestId"]
+
 			# Get request details (for request number)
-			url = "https://{0}/catalog-service/api/consumer/requests/{1}".format(host, requestId)
-			requestNumber = getUrl(url,headers, showUrl=args.showUrl)["requestNumber"]
+			#url = "https://{0}/catalog-service/api/consumer/requests/{1}".format(host, requestId)
+			#requestNumber = getUrl(url,headers, showUrl=args.showUrl)["requestNumber"]
 
 			# Get all children of this deployment
 			url = "https://{0}/catalog-service/api/consumer/resources?limit={1}&%24filter=parentResource/id+eq+'{2}'".format(host, args.pageSize, resourceId)
@@ -187,7 +193,7 @@ def main():
 						if res["key"] == "MachineReservationName":
 							machineReservation = res["value"]["value"]
 
-					print ("{0}, \"{1}\", {2}, {3}, {4}, {5}, {6}, {7}, \"{8}\", {9}, {10}".format(
+					print ("{0}, \"{1}\", {2}, {3}, {4}, {5}, {6}, \"{7}\", {8}, {9}".format(
 						# Machine name
 						child["name"], 
 						# Deployment name
@@ -196,8 +202,6 @@ def main():
 						str(resourceId),
 						# Machine resource id
 						str(machineId),
-						# Request Number
-						str(requestNumber),
 						# Owner
 						deployment["owners"][0]["ref"],
 						# IP address
