@@ -17,4 +17,5 @@ url = 'https://api.mgmt.cloud.vmware.com/iaas/projects'
 
 res = rw.getUrl(url, headers, showUrl=showUrl)
 
-print json.dumps(res)
+for c in res["content"]:
+	print c["name"], c["id"]

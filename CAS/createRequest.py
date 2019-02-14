@@ -19,10 +19,8 @@ request = {
 "deploymentName": "Example API",
 "projectId": projectId,
 "reason": "Create a deployment via API",
+"inputs": {},
 "blueprintId": blueprintId,
-"inputs": {
-"size": "small"
-}
 }
 
 url = 'https://api.mgmt.cloud.vmware.com/blueprint/api/blueprint-requests'
