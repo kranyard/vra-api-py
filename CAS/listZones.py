@@ -4,17 +4,22 @@ import os
 import sys
 import json
 
-import rw
+showUrl = False
 
-id = sys.argv[1]
+#id = sys.argv[1]
+
+import rw
 
 bearer = os.environ['CAS_BEARER']
 
 headers = {'Accept':'application/json','Content-Type':'application/json', 'Authorization':"Bearer {0}".format(bearer)}
 
-url = 'https://api.mgmt.cloud.vmware.com/blueprint/api/blueprints/{0}/inputs-schema'.format(id)
+url = 'https://api.mgmt.cloud.vmware.com/iaas/api/zones'.format(id)
 
-res = rw.getUrl(url, headers, showUrl=False)
+res = rw.getUrl(url, headers, showUrl=showUrl)
 
 print json.dumps(res)
+exit(1)
 
+for i in res["content"]:
+	print i["id"], i["externalRegionId"]

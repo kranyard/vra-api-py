@@ -6,7 +6,6 @@ import json
 
 showUrl = False
 
-sys.path.append("../")
 import rw
 
 bearer = os.environ['CAS_BEARER']

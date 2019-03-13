@@ -8,7 +8,6 @@ import json
 projectId = sys.argv[1]
 blueprintId = sys.argv[2]
 
-sys.path.append("../")
 import rw
 
 bearer = os.environ['CAS_BEARER']

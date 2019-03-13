@@ -4,7 +4,6 @@ import os
 import sys
 import json
 
-sys.path.append("../")
 import rw
 
 bearer = os.environ['CAS_BEARER']
