@@ -15,12 +15,14 @@ id = os.environ['VRATOKEN']
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
 url = "https://{0}/composition-service/api/blueprints/{1}/forms/requestform".format(host,docid)
+url = "https://{0}/composition-service/api/blueprints/{1}/forms".format(host,docid)
 
-request = rw.getUrl(url,headers, showUrl=False)
+request = rw.getUrl(url,headers, showUrl=True)
+print request
+exit(1)
 
 form =  json.loads(request)
 
-print request
 
 
 for p in form["layout"]["pages"]:

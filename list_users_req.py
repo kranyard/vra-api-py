@@ -49,7 +49,7 @@ while flag:
 	else:
 		flag=False
 
-	#print request["metadata"]
+	print request["metadata"]
 
 	for x in request["content"]:
 		ts = timestring.Date(x['dateSubmitted'])

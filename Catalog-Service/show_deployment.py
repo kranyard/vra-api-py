@@ -6,29 +6,24 @@ import json
 import time
 
 import json
-import pprint
 
-sys.path.append("../")
 import rw
+
+deploymentId = sys.argv[1]
 
 host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
-tenant = os.environ['VRATENANT']
 
-pp = pprint.PrettyPrinter(indent=4)
-
-debug = False
+debug = True
+showUrl = False
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url = "https://{0}/advanced-designer-service/api/tenants/{1}/blueprints?limit=500".format(host, tenant)
-request = rw.getUrl(url,headers)
-
-print request["metadata"]
+url = "https://{0}/catalog-service/api/consumer/deployments/{1}".format(host, deploymentId)
+request = rw.getUrl(url,headers, showUrl=showUrl)
 
 if ( debug ):
 	print json.dumps(request)
 	exit (0)
 
-for item in request['content']:
-	print item["name"], item["id"]
+

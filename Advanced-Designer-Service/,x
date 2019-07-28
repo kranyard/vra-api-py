@@ -1,0 +1,6 @@
+GET: https://cava-n-89-111.eng.vmware.com/advanced-designer-service/api/tenants/qe/blueprints?limit=500
+{u'totalPages': 1, u'offset': 0, u'totalElements': 4, u'number': 1, u'size': 500}
+Azure Machine {u'id': u'18793cf3-357e-44fd-b496-66323cd50591', u'tenant': u'_internal'}
+HelloWorld {u'id': u'b77a0824-8e9a-4a3a-ba08-43fa0bdc7401', u'tenant': u'qe'}
+HelloWorld1 {u'id': u'dad564e3-0db7-4871-a8c5-989625806f19', u'tenant': u'qe'}
+HelloWorld-2 {u'id': u'472ec53a-6301-42e1-adbe-e2328940b116', u'tenant': u'qe'}

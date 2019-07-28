@@ -3,7 +3,7 @@ import operator
 import os
 import sys
 import json
-import getpass
+import urllib
 
 import rw
 
@@ -12,11 +12,10 @@ refreshToken = sys.argv[1]
 casUrl = "api.staging.symphony-dev.com"
 casUrl = "api.mgmt.cloud.vmware.com"
 
-authPayload = { 'refreshToken': refreshToken }
+authPayload = '{ "refreshToken": '+refreshToken+' }'
 data = json.dumps(authPayload)
-headers = {'Accept':'application/json','Content-Type':'application/json'}
 
-resp=rw.postUrl("https://{0}/iaas/login".format(casUrl),data=data,headers=headers,showUrl=True)
+resp=rw.postUrl("https://{0}/iaas/login".format(casUrl),data=data,showUrl=True)
 
 print resp["token"]
 

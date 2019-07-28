@@ -16,18 +16,19 @@ def deleteUrl(url,headers,showUrl=showUrl):
 	r = requests.delete(url,headers=headers,verify=False)
 	return (r)
 
-def postUrl(url,headers,data,showUrl=showUrl):
+def postUrl(url,headers, data,showUrl=showUrl):
 	if (showUrl):
 		print "POST: "+url
 		print data
 	r = requests.post(url,headers=headers,data=data,verify=False)
-	return(r)
 
 	#print r.status_code
 	#print r.headers
 
-	#if ( r.status_code == 200 ):
-		#return r.json()
+	if ( r.status_code == 200 ):
+		return r.json()
+	else:
+		return r
 
 
 def putUrl(url,headers,data,showUrl=showUrl):
