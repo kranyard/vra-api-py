@@ -23,14 +23,11 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 url = "https://{0}/catalog-service/api/consumer/deployments/{1}".format(host, deploymentId)
 request = rw.getUrl(url,headers, showUrl=showUrl)
 
-print request["name"]
+print (request["name"])
 
 request["name"] = name
 request["description"] = "Some text"
 
-print request["expenseMonthToDate"]
-
-
 request = rw.putUrl(url,headers, showUrl=showUrl, data=json.dumps(request))
 
-print request
+print (request)

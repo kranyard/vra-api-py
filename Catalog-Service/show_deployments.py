@@ -21,7 +21,7 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 
 url = "https://{0}/catalog-service/api/consumer/deployments?limit={1}".format(host, pageSize)
 
-#print request["metadata"]
+#print (request["metadata"])
 
 while url:
 
@@ -37,4 +37,4 @@ while url:
 			url = l["href"]
 
 	for item in request['content']:
-		print item['name']
+		print (item['name'],item['id'])

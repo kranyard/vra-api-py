@@ -16,7 +16,7 @@ conn = psycopg2.connect(host=psqlhost,database=psqldb, user=psqluser, password=p
 machineName = sys.argv[1]
 
 cur = conn.cursor()
-cur.execute("select parentresource_id from cat_resource where name = '{0}'".format(machineName))
+cur.execute("select parentresource_id from cat_resource where name = '{0}' and parentresource_id IS NOT NULL".format(machineName))
 resourceId = ((cur.fetchone())[0])
 cur.close()
 
