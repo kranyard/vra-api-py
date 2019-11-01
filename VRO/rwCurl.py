@@ -1,48 +1,60 @@
-import requests
-
-requests.packages.urllib3.disable_warnings()
+import operator
+import os
+import sys
+import json
 
 showUrl = True
 
 def getUrl(url,headers,auth,showUrl=showUrl):
+
+
+	cmd="curl -s -u {2}:{3} -X GET --insecure {0} \"{1}\"".format(headers,url, auth[0], auth[1])
 	if (showUrl):
 		print "GET: "+url
-	r = requests.get(url,headers=headers,auth=auth, verify=False)
-	return r.json()
+		# print cmd
+
+	stream = os.popen(cmd)
+	request = json.loads(stream.read())
+	return request
 
 def deleteUrl(url,headers,showUrl=showUrl):
 	if (showUrl):
-		print "DELETE: "+url
-	r = requests.delete(url,headers=headers,verify=False)
-	return (r)
+		print "GET: "+url
+
+	cmd="curl -s -X DELETE --insecure {0} \'{1}\'".format(headers,url)
+	#print cmd
+
+	stream = os.popen(cmd)
+
+	print stream.read()
+	#request = json.loads(stream.read())
+	#return request
 
 def postUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):
 		print "POST: "+url
-		print data
-	r = requests.post(url,headers=headers,data=data,verify=False)
-	return(r)
+		#print data
+	cmd="curl -s -X POST --insecure {0} --data {1} \'{2}\'".format(headers,data, url)
+	#print cmd
 
-	#print r.status_code
-	#print r.headers
+	stream = os.popen(cmd)
 
-	#if ( r.status_code == 200 ):
-		#return r.json()
-
+	s = stream.read()
+	return (json.loads(s))
 
 def putUrl(url,headers,data,showUrl=showUrl):
 	if (showUrl):
-		print "POST: "+url
+		print "PUT: "+url
 		print data
-	r = requests.put(url,headers=headers,data=data,verify=False)
-	return(r)
+	cmd="curl -s -X PUT --insecure {0} --data \'{1}\' \'{2}\'".format(headers,data, url)
+	#print cmd
 
-	#print r.status_code
-	#print r.headers
+	stream = os.popen(cmd)
 
-	#if ( r.status_code == 200 ):
-		#return r.json()
-	
+	print stream.read()
+	#request = json.loads(stream.read())
+	#return request
+
 
 def findProperties(item, name):
 	_findProps(item, name, "", 0)
