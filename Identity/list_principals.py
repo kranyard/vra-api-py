@@ -25,7 +25,7 @@ userid = sys.argv[1]
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 
-url="https://{0}/identity/api/tenants/{1}/principals/{2}/subtenants?limit={3}".format(host, tenant, userid, pageSize)
+url="https://{0}/identity/api/tenants/{1}/subtenants/{2}/principals?limit={3}".format(host, tenant, userid, pageSize)
 
 #pp.pprint(request["content"])
 

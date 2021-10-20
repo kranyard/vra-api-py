@@ -5,7 +5,7 @@ import sys
 import json
 import urllib
 
-import rw
+import crw
 
 refreshToken = sys.argv[1]
 
@@ -15,7 +15,7 @@ casUrl = "api.mgmt.cloud.vmware.com"
 authPayload = '{ "refreshToken": '+refreshToken+' }'
 data = json.dumps(authPayload)
 
-resp=rw.postUrl("https://{0}/iaas/login".format(casUrl),data=data,showUrl=True)
+resp=crw.postUrl("https://{0}/iaas/login".format(casUrl),data=data,showUrl=True)
 
 print resp["token"]
 

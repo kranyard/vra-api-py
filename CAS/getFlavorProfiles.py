@@ -4,19 +4,16 @@ import os
 import sys
 import json
 
+showUrl = False
+
 import rw
 
 bearer = os.environ['CAS_BEARER']
 
 headers = {'Accept':'application/json','Content-Type':'application/json', 'Authorization':"Bearer {0}".format(bearer)}
 
-url = 'https://api.mgmt.cloud.vmware.com/deployment/api/deployments'
+url = 'https://api.mgmt.cloud.vmware.com/iaas/flavor-profiles'
 
-res = rw.getUrl(url, headers, showUrl=False)
+res = rw.getUrl(url, headers, showUrl=showUrl)
 
 print json.dumps(res)
-exit(1)
-
-for r in res["content"]:
-	print r['name'], r['createdBy'], r["id"]
-

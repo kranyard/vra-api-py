@@ -69,7 +69,7 @@ def main():
         #url = "https://{0}/catalog-service/api/consumer/resourceViews?$filter=substringof('{1}', name)&withExtendedData=true&withOperations=true&limit={2}".format(host, name, args.pageSize)
 
     else:
-        url = "https://{0}/catalog-service/api/consumer/resourceViews?limit={1}".format(host, args.pageSize)
+        url = "https://{0}/catalog-service/api/consumer/resources?limit={1}".format(host, args.pageSize)
     
 
     while url:
@@ -80,7 +80,7 @@ def main():
             print json.dumps(request)
         else:
             for c in request["content"]:
-                print c["name"],c["status"],c["resourceType"]
+                print c["name"],c["status"]
 
         if args.metadata:
             print "METADATA: "+str(request["metadata"])

@@ -12,9 +12,10 @@ headers = {'Accept':'application/json','Content-Type':'application/json', 'Autho
 
 url = 'https://api.mgmt.cloud.vmware.com/blueprint/api/blueprints'
 
-res = rw.getUrl(url, headers)
+res = rw.getUrl(url, headers, showUrl=False)
 
-#print json.dumps(res)
+print json.dumps(res)
+exit(1)
 
 for r in res['links']:
 

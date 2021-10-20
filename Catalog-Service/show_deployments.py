@@ -14,8 +14,8 @@ pageSize=500
 host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
-debug = False
-showUrl = True
+debug = True
+showUrl = False
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 

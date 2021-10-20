@@ -1,0 +1,268 @@
+[
+  {
+    "content": [
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-action",
+        "contentId": "cdf4170e-d767-437d-b335-5384b618155c",
+        "version": 2,
+        "lastUpdated": "2019-12-02T10:00:32.113Z",
+        "name": "MachineAction",
+        "dependencies": [
+          "66b50b7c-2e78-4560-bf1d-f4203437a525"
+        ],
+        "subtenantId": null,
+        "createdDate": "2019-11-29T08:16:46.901Z",
+        "id": "2656ff88-47e1-4ec7-8d09-514c0069179e",
+        "tenantId": "qe",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-type",
+        "contentId": "dda3cc3f-f2da-45f5-bc64-a292c1ace3ba",
+        "version": 7,
+        "lastUpdated": "2020-02-02T10:17:27.274Z",
+        "name": "Azure Virtual Machine",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-06-07T15:08:34.672Z",
+        "id": "b62edf2f-41d7-445d-8220-c1b86ace9920",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-action",
+        "contentId": "fa3e5313-1e82-4595-9715-b0a66b0337d5",
+        "version": 0,
+        "lastUpdated": "2020-02-02T10:17:27.820Z",
+        "name": "Delete",
+        "dependencies": [
+          "b62edf2f-41d7-445d-8220-c1b86ace9920"
+        ],
+        "subtenantId": null,
+        "createdDate": "2020-02-02T10:17:27.820Z",
+        "id": "a38c85ec-80b7-4f0f-a5bd-d50ce6eecfed",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-action",
+        "contentId": "6c4b3b0b-9685-4987-acf3-b393731361ba",
+        "version": 0,
+        "lastUpdated": "2020-02-02T10:17:28.097Z",
+        "name": "Restart",
+        "dependencies": [
+          "b62edf2f-41d7-445d-8220-c1b86ace9920"
+        ],
+        "subtenantId": null,
+        "createdDate": "2020-02-02T10:17:28.097Z",
+        "id": "e2132d11-0905-431f-91f6-5289c0e20324",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-action",
+        "contentId": "6379a166-b84e-4ddf-b1e7-39e3a1ea8a62",
+        "version": 0,
+        "lastUpdated": "2020-02-02T10:17:28.832Z",
+        "name": "Manage Public IP Address",
+        "dependencies": [
+          "b62edf2f-41d7-445d-8220-c1b86ace9920"
+        ],
+        "subtenantId": null,
+        "createdDate": "2020-02-02T10:17:28.832Z",
+        "id": "115dd7e2-bf30-4aea-aa61-a0c981705a5e",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "composite-blueprint",
+        "contentId": "azure1",
+        "version": 0,
+        "lastUpdated": "2019-10-02T14:51:52.696Z",
+        "name": "azure1",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-10-02T14:51:52.696Z",
+        "id": "eff8467f-c11f-4c14-98a6-bf949e15a8dd",
+        "tenantId": "qe",
+        "@type": "Content",
+        "description": "azure1"
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-blueprint",
+        "contentId": "18793cf3-357e-44fd-b496-66323cd50591",
+        "version": 7,
+        "lastUpdated": "2020-02-02T10:17:29.637Z",
+        "name": "Azure Machine",
+        "dependencies": [
+          "b62edf2f-41d7-445d-8220-c1b86ace9920"
+        ],
+        "subtenantId": null,
+        "createdDate": "2019-06-07T15:08:38.328Z",
+        "id": "31e6f0af-3eea-4cc7-accf-114ffb4546ff",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-action",
+        "contentId": "d45ff428-3a90-419f-8ab0-216360bd4a8e",
+        "version": 0,
+        "lastUpdated": "2020-02-02T10:17:30.007Z",
+        "name": "Start",
+        "dependencies": [
+          "b62edf2f-41d7-445d-8220-c1b86ace9920"
+        ],
+        "subtenantId": null,
+        "createdDate": "2020-02-02T10:17:30.007Z",
+        "id": "e51dbb98-ba4e-4727-b355-a5db9d0b4dd0",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-action",
+        "contentId": "749dd1d9-bb53-40ba-b81f-21ebb89eac10",
+        "version": 0,
+        "lastUpdated": "2020-02-02T10:17:30.334Z",
+        "name": "Stop",
+        "dependencies": [
+          "b62edf2f-41d7-445d-8220-c1b86ace9920"
+        ],
+        "subtenantId": null,
+        "createdDate": "2020-02-02T10:17:30.334Z",
+        "id": "884c62e7-5160-43eb-86df-39884658a517",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "composite-blueprint",
+        "contentId": "centosmaxstorage",
+        "version": 3,
+        "lastUpdated": "2019-11-15T09:05:08.487Z",
+        "name": "centos-maxstorage",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-11-11T17:53:14.109Z",
+        "id": "b21edfcb-9365-4f69-96ae-47d96c21582c",
+        "tenantId": "qe",
+        "@type": "Content",
+        "description": "centos-maxstorage"
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "composite-blueprint",
+        "contentId": "maxstoragetest2",
+        "version": 2,
+        "lastUpdated": "2019-11-20T11:51:10.688Z",
+        "name": "maxstorage-test2",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-11-12T11:26:01.379Z",
+        "id": "68ed6b08-be3f-42b3-896e-054481273afe",
+        "tenantId": "qe",
+        "@type": "Content",
+        "description": "maxstorage-test2"
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "composite-blueprint",
+        "contentId": "centos",
+        "version": 14,
+        "lastUpdated": "2019-12-07T12:40:53.291Z",
+        "name": "centos",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-09-04T14:58:40.609Z",
+        "id": "db82ad56-3b1a-4d1b-89c1-727cce15b66b",
+        "tenantId": "qe",
+        "@type": "Content",
+        "description": "centos"
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-mapping",
+        "contentId": "7e7f4058-8f43-4b85-b6c3-1e168e30cee7",
+        "version": 7,
+        "lastUpdated": "2020-02-02T10:16:30.603Z",
+        "name": "IaaS VC VirtualMachine",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-06-07T15:08:03.090Z",
+        "id": "66b50b7c-2e78-4560-bf1d-f4203437a525",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-mapping",
+        "contentId": "06480adc-66bd-452a-b8a4-2aa167fc2b0f",
+        "version": 7,
+        "lastUpdated": "2020-02-02T10:16:30.835Z",
+        "name": "IaaS vCD VM",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-06-07T15:08:03.165Z",
+        "id": "63046b30-6343-4f5e-ab83-e34645916042",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "xaas-resource-mapping",
+        "contentId": "a193710f-eb62-4c65-9a40-d21ff4da7438",
+        "version": 7,
+        "lastUpdated": "2020-02-02T10:16:30.977Z",
+        "name": "Deployment",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2019-06-07T15:08:03.212Z",
+        "id": "ca297ade-1aa9-43e6-a169-8917f724e15f",
+        "tenantId": "_internal",
+        "@type": "Content",
+        "description": null
+      },
+      {
+        "mimeType": null,
+        "contentTypeId": "composite-blueprint",
+        "contentId": "basicvm",
+        "version": 2,
+        "lastUpdated": "2020-02-05T07:12:07.502Z",
+        "name": "basicvm",
+        "dependencies": [],
+        "subtenantId": null,
+        "createdDate": "2020-02-03T20:34:41.068Z",
+        "id": "b2bd7bf0-7c9a-4764-9fc2-3d3b56b2c23a",
+        "tenantId": "qe",
+        "@type": "Content",
+        "description": "basicvm"
+      }
+    ],
+    "links": [],
+    "metadata": {
+      "totalPages": 1,
+      "offset": 0,
+      "totalElements": 16,
+      "number": 1,
+      "size": 20
+    }
+  }
+]

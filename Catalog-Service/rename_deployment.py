@@ -16,7 +16,7 @@ host = os.environ['VRAHOST']
 id = os.environ['VRATOKEN']
 
 debug = True
-showUrl = False
+showUrl = True
 
 headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application/json;charset=UTF-8', 'Authorization':"Bearer {0}".format(id)}
 

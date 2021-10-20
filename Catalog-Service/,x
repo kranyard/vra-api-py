@@ -1,0 +1,4644 @@
+{
+  "content": [
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/ae4d8dd4-57b7-402f-b9d9-bf26e8ed9f43",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "0241a428-3e6a-4e54-97d4-b4ab5be0f667",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.463Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:25.412Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:95:15",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-258",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-284",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030ced1-b6f4-f655-d87f-35e4be9a1b56",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "e42b542c-bdff-4a37-a73a-8f3d78fb951c",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "8c3b3042-8d09-7279-0f61-ef6d860e7668",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-258",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "ae4d8dd4-57b7-402f-b9d9-bf26e8ed9f43",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/899e67af-eb35-432a-81dd-eeb2d10e1f18",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "073f10d4-ed62-429c-b41c-304566cdb3f8",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.948Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:30.283Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:4a:18",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-262",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-289",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030824b-9877-c6e7-04fc-47e7d751dbf5",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "ddd8ce53-1a7a-4a20-9bcd-da756375a438",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "54563042-97d1-99c0-9148-9602abb50cfe",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-262",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "899e67af-eb35-432a-81dd-eeb2d10e1f18",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/ff883a9f-9be4-4300-ba88-c3e77bfbcf8d",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "07605c47-5119-45b1-b151-970f84cd4133",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:06.767Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:52:27.858Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:18:28",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-253",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-281",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030460a-3cf0-0fdc-73fa-fd432f45f576",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "ab1d90f6-e44e-4149-9a4a-3ace8bfc5b5b",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "01103042-358c-02fc-7680-dcb122904558",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-253",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "ff883a9f-9be4-4300-ba88-c3e77bfbcf8d",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/20ae939a-fc42-4c9f-847b-9cdf1d0ba8ca",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "122721c5-c76a-4fde-8630-b6f675f6caf7",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.184Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:30.216Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:cf:8d",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-264",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-292",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "50308c62-2cb6-8ee6-93e3-4c4e51d57fa4",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "b4c3b70c-014e-493b-bec5-d68b8a7ee42e",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "ad193042-5a2c-eee7-81d5-1adfdd94146a",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-264",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "20ae939a-fc42-4c9f-847b-9cdf1d0ba8ca",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%271279bdd2-af7f-4ee9-b793-dec1b7d5d670%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "1279bdd2-af7f-4ee9-b793-dec1b7d5d670",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:06.572Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:06.590Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-86111398",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2720ae939a-fc42-4c9f-847b-9cdf1d0ba8ca%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "20ae939a-fc42-4c9f-847b-9cdf1d0ba8ca",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.184Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:08.209Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-74368514",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2724274b99-e4c9-473f-96fc-65ad8f30a623%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "24274b99-e4c9-473f-96fc-65ad8f30a623",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.394Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.412Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-58096302",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/1279bdd2-af7f-4ee9-b793-dec1b7d5d670",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "26bea4f4-616e-4330-8536-f5fb77acaaec",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:06.572Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:52:15.965Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:0c:24",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-251",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-279",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030862a-5db3-ba1d-7a7a-fb15faa6b2b1",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "950930f0-4ba6-4a48-94db-29c36629a9ef",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "79d33042-7ece-6d61-7ccf-443dc4834ded",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-251",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "1279bdd2-af7f-4ee9-b793-dec1b7d5d670",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/20d4fbed-de37-462c-ae93-1bff4980e905",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/5dedf794-2293-4afe-8698-b012038cf597",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "278ff7cc-1307-490a-834f-68c3744980a2",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "20d4fbed-de37-462c-ae93-1bff4980e905",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T12:29:40.247Z",
+        "end": null
+      },
+      "status": "Off",
+      "description": "Provisioned by VMware vRA",
+      "lastUpdated": "2021-10-05T21:46:19.398Z",
+      "dateCreated": "2021-10-05T12:34:40.492Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "2048",
+        "MachineDailyCost": 0,
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:61:59",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "2G9uq0Ot",
+        "MachineReservationName": "dev002",
+        "VirtualMachine.Cafe.Blueprint.Name": "sky-test",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 16,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "MachineName": "cava-n-89-111-242",
+        "VirtualMachine.CPU.Count": "8",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Expire": true,
+        "Reconfigure": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "EXTERNAL_REFERENCE_ID": "vm-269",
+        "MachineMemory": 2048,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "16384",
+        "MachineGroupName": "Development",
+        "VirtualMachine.Cafe.Blueprint.Id": "skytest",
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "MachineGuestOperatingSystem": "Ubuntu Linux (64-bit)",
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 16,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1",
+              "DISK_LABEL": "Hard disk 1"
+            }
+          }
+        ],
+        "MachineCPU": 8,
+        "PowerOn": true,
+        "ip_address": "",
+        "_snapshot_propagation": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "16",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "sky-test",
+        "VirtualMachine.Admin.UUID": "5030e163-b0cc-6e42-8b5c-b8acd62cca5c",
+        "machineId": "165e2af8-325b-4f71-b0f1-0d8b58738e25",
+        "SNAPSHOT_LIST": [],
+        "VirtualMachine.Disk0.IsClone": true,
+        "MachineExpirationDate": null,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "2d443042-13d2-5726-4722-f1c4376207b1",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-242",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "5dedf794-2293-4afe-8698-b012038cf597",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/29c453bd-5bba-4434-879c-3ec3e2648353",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/02ee084a-a53e-4174-9f28-8a6d109ae376",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "297b6b82-966d-4587-a67d-739636550b5c",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "29c453bd-5bba-4434-879c-3ec3e2648353",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-03-25T18:13:50.797Z",
+        "end": null
+      },
+      "status": "Disposing",
+      "description": "Test",
+      "lastUpdated": "2021-05-19T10:48:33.484Z",
+      "dateCreated": "2021-03-25T18:17:08.324Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "128",
+        "MachineDailyCost": 0,
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:52:46",
+              "NETWORK_NAME": "VMNetwork-PortGroup"
+            }
+          }
+        ],
+        "trace_id": "0WZ9rtoO",
+        "MachineReservationName": "dev001",
+        "VirtualMachine.Cafe.Blueprint.Name": "centos-maxstorage",
+        "IS_COMPONENT_MACHINE": false,
+        "MachineCPU": 7,
+        "Destroy": true,
+        "MachineStorage": 36,
+        "_number_of_instances": "1",
+        "VirtualMachine.Disk2.IsClone": false,
+        "__datacollected_ipaddress": "192.168.0.86",
+        "MachineName": "cava-n-89-111-192",
+        "VirtualMachine.CPU.Count": "7",
+        "Component": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Storage.Name": "Compute-Datastore",
+        "MachineInterfaceType": "vSphere",
+        "VirtualMachine.Network0.PortID": "8",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "EXTERNAL_REFERENCE_ID": "vm-123",
+        "MachineMemory": 128,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "36864",
+        "MachineGroupName": "Development",
+        "VirtualMachine.Cafe.Blueprint.Id": "centosmaxstorage",
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "Compute-Cluster",
+        "MachineGuestOperatingSystem": "Red Hat Enterprise Linux 6 (32-bit)",
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1",
+              "DISK_LABEL": "Hard disk 1"
+            }
+          },
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_RESERVATION_POLICY": "Swisscom1",
+              "DISK_CAPACITY": 10,
+              "DISK_INPUT_ID": "DISK_INPUT_ID2"
+            }
+          },
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 5,
+              "DISK_INPUT_ID": "DISK_INPUT_ID3"
+            }
+          },
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 20,
+              "DISK_INPUT_ID": "DISK_INPUT_ID4"
+            }
+          }
+        ],
+        "MachineType": "Virtual",
+        "ip_address": "192.168.0.86",
+        "_snapshot_propagation": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "16",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "centos-maxstorage",
+        "VirtualMachine.Admin.UUID": "5030015c-5531-d2f3-ce10-f336c3123f27",
+        "machineId": "6d4d414f-45e9-4e45-95fa-b18ec28f6c30",
+        "SNAPSHOT_LIST": [],
+        "VirtualMachine.Disk0.IsClone": true,
+        "MachineExpirationDate": null,
+        "endpointExternalReferenceId": "4e0811a5-337c-404e-bc3b-476174b75334",
+        "VirtualMachine.Disk1.IsClone": false,
+        "VirtualMachine.Admin.AgentID": "46133042-89c2-d305-bc22-7670ef878953"
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-192",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "02ee084a-a53e-4174-9f28-8a6d109ae376",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/b6dbdce1-0586-4915-baf8-848e8403f2f9",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%272ea7ee93-4401-465c-b4fd-e3e43ea02e02%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "2ea7ee93-4401-465c-b4fd-e3e43ea02e02",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "b6dbdce1-0586-4915-baf8-848e8403f2f9",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:46:20.778Z",
+        "end": null
+      },
+      "status": null,
+      "description": "",
+      "lastUpdated": "2021-10-05T21:48:22.750Z",
+      "dateCreated": "2021-10-05T21:46:13.039Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-39457989",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/24274b99-e4c9-473f-96fc-65ad8f30a623",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "386f1bce-eb93-48a6-a8a6-a01c82e5e1da",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.394Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:31.910Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:67:a7",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-257",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-291",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "50302fee-dbb1-467d-65c8-6c81706fd6ed",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "90aa2fec-cfbb-4c7e-8201-f6db13e8c0c0",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "9a763042-9e97-3567-c7f5-c36c1e1eb470",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-257",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "24274b99-e4c9-473f-96fc-65ad8f30a623",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/c94d1365-f8dd-43db-86ab-2d7e267811a8",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "3b400220-2380-45dd-b8ac-82dd8138125a",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.089Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:36.158Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:d6:16",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-263",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-290",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030c9dd-3f51-095a-9960-a5dfe222ba65",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "d01a51bf-4501-458a-8623-966b1b18ab6b",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "0f913042-a098-c714-6071-089f090983d9",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-263",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "c94d1365-f8dd-43db-86ab-2d7e267811a8",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/b6dbdce1-0586-4915-baf8-848e8403f2f9",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/2ea7ee93-4401-465c-b4fd-e3e43ea02e02",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "3e89119f-5ef2-444d-885e-d688ef571ce7",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "b6dbdce1-0586-4915-baf8-848e8403f2f9",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:46:20.778Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:55:36.671Z",
+      "dateCreated": "2021-10-05T21:48:08.838Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:b7:ac",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "gI0xO91V",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-243",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-270",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "50300863-2eaa-6912-2517-876b394c9ac4",
+        "machineId": "1f294454-1a1a-4ef9-ad4c-f55446fdc730",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "e8733042-85dc-e2dd-8f49-23148c4a38e7",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-243",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "2ea7ee93-4401-465c-b4fd-e3e43ea02e02",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%274093d49f-a4c9-4ed4-8d2b-fe9d4d1f2f11%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "4093d49f-a4c9-4ed4-8d2b-fe9d4d1f2f11",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:06.843Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:23.844Z",
+      "dateCreated": "2021-10-05T21:50:06.872Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-39109195",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/faad34d1-8922-42bc-b9b6-8250722a47d0",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "419ed01b-59cb-4f9a-ac03-dded7bcf0e8a",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:05.090Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:56:07.645Z",
+      "dateCreated": "2021-10-05T21:51:58.908Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:9d:f4",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-247",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-274",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "50302e98-fe29-edf8-41bb-59e08a199bb5",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "1d60f607-3dd1-42a8-a3e3-305b8cb4b1f0",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "bf7f3042-98e4-f084-d7c0-7aa635151b29",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-247",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "faad34d1-8922-42bc-b9b6-8250722a47d0",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/4c28cd0e-48ec-4bf4-8182-cf27bc073b29",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/5dde45c1-4e98-4cda-8852-de014ce76b35",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "4f726c95-e81f-4bf4-95f9-365ced7842bd",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "4c28cd0e-48ec-4bf4-8182-cf27bc073b29",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T11:31:23.825Z",
+        "end": null
+      },
+      "status": "Off",
+      "description": "Provisioned by VMware vRA",
+      "lastUpdated": "2021-10-05T21:46:19.398Z",
+      "dateCreated": "2021-10-05T11:36:56.822Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4096",
+        "MachineDailyCost": 0,
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:4b:9b",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "o6i44jLX",
+        "MachineReservationName": "dev002",
+        "VirtualMachine.Cafe.Blueprint.Name": "sky-test",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 16,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "MachineName": "cava-n-89-111-241",
+        "VirtualMachine.CPU.Count": "8",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Expire": true,
+        "Reconfigure": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "EXTERNAL_REFERENCE_ID": "vm-268",
+        "MachineMemory": 4096,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "16384",
+        "MachineGroupName": "Development",
+        "VirtualMachine.Cafe.Blueprint.Id": "skytest",
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "MachineGuestOperatingSystem": "Ubuntu Linux (64-bit)",
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 16,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1",
+              "DISK_LABEL": "Hard disk 1"
+            }
+          }
+        ],
+        "MachineCPU": 8,
+        "PowerOn": true,
+        "ip_address": "",
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "16",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "sky-test",
+        "VirtualMachine.Admin.UUID": "503088df-5a5b-545c-83d3-83021c0924b3",
+        "machineId": "2b05df66-9433-40ab-bda2-7103a2ee5b37",
+        "SNAPSHOT_LIST": [],
+        "VirtualMachine.Disk0.IsClone": true,
+        "MachineExpirationDate": null,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "6f073042-d2e1-48af-23ee-eb6b280ddf04",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-241",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "5dde45c1-4e98-4cda-8852-de014ce76b35",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/9b4c02f7-75d6-410f-a30c-e5465bd59f6c",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2751e21081-b69a-47a3-869a-ae7aa2a26c69%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "51e21081-b69a-47a3-869a-ae7aa2a26c69",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "9b4c02f7-75d6-410f-a30c-e5465bd59f6c",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:49:46.783Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:51:58.924Z",
+      "dateCreated": "2021-10-05T21:49:36.200Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-28901738",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2751f0166f-7260-4d95-b4de-9e3962257edf%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "51f0166f-7260-4d95-b4de-9e3962257edf",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:05.688Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:05.748Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-31130122",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%275823b4a3-9a83-480c-bab3-141a8a16eb6d%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "5823b4a3-9a83-480c-bab3-141a8a16eb6d",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.127Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:07.149Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-08644905",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?page=2&limit=20",
+      "@type": "link",
+      "rel": "next"
+    }
+  ],
+  "metadata": {
+    "totalPages": 3,
+    "offset": 0,
+    "totalElements": 55,
+    "number": 1,
+    "size": 20
+  }
+}
+{
+  "content": [
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/2c29d223-77dd-4a59-8c48-0f05151e952b",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/3acc35f1-1f0b-40ce-99a2-a1d79a0c5448",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "5db19d8f-8b64-4277-b134-428d8a276104",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "2c29d223-77dd-4a59-8c48-0f05151e952b",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-04-26T12:49:03.571Z",
+        "end": "2021-05-27T21:00:00.000Z"
+      },
+      "status": "Disposing",
+      "description": "Provisioned by VMware vRA",
+      "lastUpdated": "2021-05-19T10:48:33.484Z",
+      "dateCreated": "2021-04-26T12:52:42.981Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "128",
+        "MachineDailyCost": 0,
+        "TestProp": "123",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": "2021-06-26T21:00:00.000Z",
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:4c:1f",
+              "NETWORK_NAME": "VMNetwork-PortGroup"
+            }
+          }
+        ],
+        "trace_id": "YPgZvH6O",
+        "MachineReservationName": "dev001",
+        "VirtualMachine.Cafe.Blueprint.Name": "centos",
+        "IS_COMPONENT_MACHINE": false,
+        "MachineCPU": 7,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "_number_of_instances": "1",
+        "__datacollected_ipaddress": "192.168.0.88",
+        "MachineName": "cava-n-89-111-194",
+        "VirtualMachine.CPU.Count": "7",
+        "Component": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Storage.Name": "Compute-Datastore",
+        "MachineInterfaceType": "vSphere",
+        "VirtualMachine.Network0.PortID": "9",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "EXTERNAL_REFERENCE_ID": "vm-125",
+        "MachineMemory": 128,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "VirtualMachine.Cafe.Blueprint.Id": "centos",
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "Compute-Cluster",
+        "MachineGuestOperatingSystem": "Red Hat Enterprise Linux 6 (32-bit)",
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1",
+              "DISK_LABEL": "Hard disk 1"
+            }
+          }
+        ],
+        "MachineType": "Virtual",
+        "ip_address": "192.168.0.88",
+        "_snapshot_propagation": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "centos",
+        "VirtualMachine.Admin.UUID": "5030d8c8-f00a-08b6-e6d9-a0e854e44f1f",
+        "machineId": "e3c443aa-b383-48d2-a645-5a0c922db71e",
+        "SNAPSHOT_LIST": [],
+        "VirtualMachine.Disk0.IsClone": true,
+        "MachineExpirationDate": "2021-05-27T21:00:00.000Z",
+        "endpointExternalReferenceId": "4e0811a5-337c-404e-bc3b-476174b75334",
+        "Owner": "test123",
+        "VirtualMachine.Admin.AgentID": "6cc63042-6334-fb0d-f7dc-dd08de438c09"
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-194",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "3acc35f1-1f0b-40ce-99a2-a1d79a0c5448",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/1aeef885-2ce5-4317-8d98-283e3f8381f6",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/4c28cd0e-48ec-4bf4-8182-cf27bc073b29",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%275dde45c1-4e98-4cda-8852-de014ce76b35%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "5dde45c1-4e98-4cda-8852-de014ce76b35",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "sky-test",
+      "hasChildren": true,
+      "iconId": "composition.blueprint.png",
+      "costs": null,
+      "requestId": "4c28cd0e-48ec-4bf4-8182-cf27bc073b29",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T11:31:23.825Z",
+        "end": null
+      },
+      "status": null,
+      "description": "",
+      "lastUpdated": "2021-10-05T13:28:06.478Z",
+      "dateCreated": "2021-10-05T11:31:09.058Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "sky-test-85183371",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "1aeef885-2ce5-4317-8d98-283e3f8381f6",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/1aeef885-2ce5-4317-8d98-283e3f8381f6",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/20d4fbed-de37-462c-ae93-1bff4980e905",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%275dedf794-2293-4afe-8698-b012038cf597%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "5dedf794-2293-4afe-8698-b012038cf597",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "sky-test",
+      "hasChildren": true,
+      "iconId": "composition.blueprint.png",
+      "costs": null,
+      "requestId": "20d4fbed-de37-462c-ae93-1bff4980e905",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T12:29:40.247Z",
+        "end": null
+      },
+      "status": null,
+      "description": "",
+      "lastUpdated": "2021-10-05T13:13:15.731Z",
+      "dateCreated": "2021-10-05T12:29:31.181Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "sky-test-29314466",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "1aeef885-2ce5-4317-8d98-283e3f8381f6",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/9b4c02f7-75d6-410f-a30c-e5465bd59f6c",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/51e21081-b69a-47a3-869a-ae7aa2a26c69",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "60c54628-80a4-46ba-a786-268e187f5fd1",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "9b4c02f7-75d6-410f-a30c-e5465bd59f6c",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:49:46.783Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:56:07.645Z",
+      "dateCreated": "2021-10-05T21:51:36.525Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:65:1c",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "zIznVEU9",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-245",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-272",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030363f-eb61-be84-0e5d-2fd95f9367c6",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "2eb9a511-622e-4b93-a8b7-9cfa6cfdba5d",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "bef23042-d47a-d0b6-1c37-2166d013afbb",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-245",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "51e21081-b69a-47a3-869a-ae7aa2a26c69",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/c3ad3f75-9812-47d2-aae1-189abc55d3ea",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/bf1c1ec7-d19f-443b-9079-01e1dc5e9df0",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "72bd251d-4cfe-4715-80ad-fec4b7eaa5d7",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "c3ad3f75-9812-47d2-aae1-189abc55d3ea",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:49:52.787Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:55:36.671Z",
+      "dateCreated": "2021-10-05T21:51:44.330Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:5b:1d",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "MIVIUgKl",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-246",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-273",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030e0a2-1534-1cfa-b43f-9514a6e69fcb",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "5dec02d5-ff3f-4341-adb8-7a0fe1636d7e",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "c6ad3042-93d1-c162-3f05-744f22851466",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-246",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "bf1c1ec7-d19f-443b-9079-01e1dc5e9df0",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2774689a48-3620-4a48-8aa0-6364eea4adec%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "74689a48-3620-4a48-8aa0-6364eea4adec",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.379Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:08.404Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-91048253",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%277addf29d-40d2-411d-b7a4-53916c350827%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "7addf29d-40d2-411d-b7a4-53916c350827",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.833Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.856Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-14705340",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/74689a48-3620-4a48-8aa0-6364eea4adec",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "7f53b7d4-9796-4fed-b7d4-6e8b4759d022",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.379Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:31.997Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:b8:d9",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-266",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-293",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "50306259-7f35-0f00-44d8-21db1332b617",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "c3ee89dd-3ba2-4574-ade0-a87954315f20",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "9f343042-b036-3151-7fb5-8270d34a9e9d",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-266",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "74689a48-3620-4a48-8aa0-6364eea4adec",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/51f0166f-7260-4d95-b4de-9e3962257edf",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "8411c6bc-1c60-400e-a30d-ef688d8bdb06",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:05.688Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:51:58.901Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:14:99",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-248",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-276",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030952b-e87e-e658-723a-71b8d1845ec0",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "edf8c0f3-c772-40d2-9f9d-9546b0ebb3be",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "8e533042-bf43-c3dc-38fe-9f15d8a7ff2f",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-248",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "51f0166f-7260-4d95-b4de-9e3962257edf",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27899e67af-eb35-432a-81dd-eeb2d10e1f18%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "899e67af-eb35-432a-81dd-eeb2d10e1f18",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.948Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.971Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-22765910",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%278e75eb33-278a-4254-826d-7f60cf7be77d%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "8e75eb33-278a-4254-826d-7f60cf7be77d",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.567Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.591Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-86959248",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/ac25e5d4-a8f2-4a00-b7c7-c47d55b44551",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "a614bfb3-d64e-41c3-9359-fd0d897b90a2",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.243Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:52:27.787Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:60:bc",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-256",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-282",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "50309c0e-3973-9eed-c5fc-bb7897016cde",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "6f31e229-e6bb-48a4-88e6-991227b1911e",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "5a143042-b372-ee11-d78c-92e8946d60e0",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-256",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "ac25e5d4-a8f2-4a00-b7c7-c47d55b44551",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27ac25e5d4-a8f2-4a00-b7c7-c47d55b44551%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "ac25e5d4-a8f2-4a00-b7c7-c47d55b44551",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.243Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:07.259Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-64734682",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/855193e0-aed6-4f31-afbd-2016404f7b29",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/f39d83c4-0681-40a2-8219-e9fece68a72d",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "ae0f5c24-3ec2-4988-a93a-7e484f0e2d8b",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "855193e0-aed6-4f31-afbd-2016404f7b29",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:48:52.789Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:56:07.645Z",
+      "dateCreated": "2021-10-05T21:50:19.167Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:69:d5",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "gWtxSgVH",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-244",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-271",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "503086d4-cc91-d0e7-45de-41ad90aee797",
+        "machineId": "9c26f1e9-5042-4af8-b13d-eb9076cacb0d",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "f2ba3042-4efd-8b13-782f-f94e79b7cb8e",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-244",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "f39d83c4-0681-40a2-8219-e9fece68a72d",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27ae4d8dd4-57b7-402f-b9d9-bf26e8ed9f43%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "ae4d8dd4-57b7-402f-b9d9-bf26e8ed9f43",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.463Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.481Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-03174638",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/c3ad3f75-9812-47d2-aae1-189abc55d3ea",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27bf1c1ec7-d19f-443b-9079-01e1dc5e9df0%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "bf1c1ec7-d19f-443b-9079-01e1dc5e9df0",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "c3ad3f75-9812-47d2-aae1-189abc55d3ea",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:49:52.787Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:51:58.924Z",
+      "dateCreated": "2021-10-05T21:49:42.335Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-07803761",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27c5cb83f2-451a-4cc6-9103-e12b0dc35bc3%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "c5cb83f2-451a-4cc6-9103-e12b0dc35bc3",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.671Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.708Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-45666990",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/8e75eb33-278a-4254-826d-7f60cf7be77d",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "c64722b8-4541-40d2-9da3-0c4bfd932177",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.567Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:27.857Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:30:04",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-259",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-286",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030629d-35f8-271d-002a-43f9edc6ef4c",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "3b58e55e-e800-40d0-90e0-2ed0b9124926",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "2fd43042-4e07-f101-cacf-1b152da36dfd",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-259",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "8e75eb33-278a-4254-826d-7f60cf7be77d",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27c94d1365-f8dd-43db-86ab-2d7e267811a8%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "c94d1365-f8dd-43db-86ab-2d7e267811a8",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.089Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:08.114Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-59404767",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27ca82dca5-05aa-4bcc-bb45-9ea9b3e38d93%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "ca82dca5-05aa-4bcc-bb45-9ea9b3e38d93",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.004Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:07.031Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-13705435",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?page=1&limit=20",
+      "@type": "link",
+      "rel": "prev"
+    },
+    {
+      "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?page=3&limit=20",
+      "@type": "link",
+      "rel": "next"
+    }
+  ],
+  "metadata": {
+    "totalPages": 3,
+    "offset": 20,
+    "totalElements": 55,
+    "number": 2,
+    "size": 20
+  }
+}
+{
+  "content": [
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/4c28cd0e-48ec-4bf4-8182-cf27bc073b29",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/5dde45c1-4e98-4cda-8852-de014ce76b35",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "4f726c95-e81f-4bf4-95f9-365ced7842bd",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "4c28cd0e-48ec-4bf4-8182-cf27bc073b29",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T11:31:23.825Z",
+        "end": null
+      },
+      "status": "Off",
+      "description": "Provisioned by VMware vRA",
+      "lastUpdated": "2021-10-05T21:46:19.398Z",
+      "dateCreated": "2021-10-05T11:36:56.822Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4096",
+        "MachineDailyCost": 0,
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:4b:9b",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "o6i44jLX",
+        "MachineReservationName": "dev002",
+        "VirtualMachine.Cafe.Blueprint.Name": "sky-test",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 16,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "MachineName": "cava-n-89-111-241",
+        "VirtualMachine.CPU.Count": "8",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Expire": true,
+        "Reconfigure": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "EXTERNAL_REFERENCE_ID": "vm-268",
+        "MachineMemory": 4096,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "16384",
+        "MachineGroupName": "Development",
+        "VirtualMachine.Cafe.Blueprint.Id": "skytest",
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "MachineGuestOperatingSystem": "Ubuntu Linux (64-bit)",
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 16,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1",
+              "DISK_LABEL": "Hard disk 1"
+            }
+          }
+        ],
+        "MachineCPU": 8,
+        "PowerOn": true,
+        "ip_address": "",
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "16",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "sky-test",
+        "VirtualMachine.Admin.UUID": "503088df-5a5b-545c-83d3-83021c0924b3",
+        "machineId": "2b05df66-9433-40ab-bda2-7103a2ee5b37",
+        "SNAPSHOT_LIST": [],
+        "VirtualMachine.Disk0.IsClone": true,
+        "MachineExpirationDate": null,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "6f073042-d2e1-48af-23ee-eb6b280ddf04",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-241",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "5dde45c1-4e98-4cda-8852-de014ce76b35",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/b6dbdce1-0586-4915-baf8-848e8403f2f9",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%272ea7ee93-4401-465c-b4fd-e3e43ea02e02%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "2ea7ee93-4401-465c-b4fd-e3e43ea02e02",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "b6dbdce1-0586-4915-baf8-848e8403f2f9",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:46:20.778Z",
+        "end": null
+      },
+      "status": null,
+      "description": "",
+      "lastUpdated": "2021-10-05T21:48:22.750Z",
+      "dateCreated": "2021-10-05T21:46:13.039Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-39457989",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/1aeef885-2ce5-4317-8d98-283e3f8381f6",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/20d4fbed-de37-462c-ae93-1bff4980e905",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%275dedf794-2293-4afe-8698-b012038cf597%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "5dedf794-2293-4afe-8698-b012038cf597",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "sky-test",
+      "hasChildren": true,
+      "iconId": "composition.blueprint.png",
+      "costs": null,
+      "requestId": "20d4fbed-de37-462c-ae93-1bff4980e905",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T12:29:40.247Z",
+        "end": null
+      },
+      "status": null,
+      "description": "",
+      "lastUpdated": "2021-10-05T13:13:15.731Z",
+      "dateCreated": "2021-10-05T12:29:31.181Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "sky-test-29314466",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "1aeef885-2ce5-4317-8d98-283e3f8381f6",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27f1138006-e8f1-473a-a799-1da74383d507%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "f1138006-e8f1-473a-a799-1da74383d507",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:06.347Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:06.364Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-10192308",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2720ae939a-fc42-4c9f-847b-9cdf1d0ba8ca%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "20ae939a-fc42-4c9f-847b-9cdf1d0ba8ca",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.184Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:08.209Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-74368514",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/9b4c02f7-75d6-410f-a30c-e5465bd59f6c",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2751e21081-b69a-47a3-869a-ae7aa2a26c69%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "51e21081-b69a-47a3-869a-ae7aa2a26c69",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "9b4c02f7-75d6-410f-a30c-e5465bd59f6c",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:49:46.783Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:51:58.924Z",
+      "dateCreated": "2021-10-05T21:49:36.200Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-28901738",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/ff883a9f-9be4-4300-ba88-c3e77bfbcf8d",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "07605c47-5119-45b1-b151-970f84cd4133",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:06.767Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:52:27.858Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:18:28",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-253",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-281",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030460a-3cf0-0fdc-73fa-fd432f45f576",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "ab1d90f6-e44e-4149-9a4a-3ace8bfc5b5b",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "01103042-358c-02fc-7680-dcb122904558",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-253",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "ff883a9f-9be4-4300-ba88-c3e77bfbcf8d",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/c94d1365-f8dd-43db-86ab-2d7e267811a8",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "3b400220-2380-45dd-b8ac-82dd8138125a",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:08.089Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:36.158Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:d6:16",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-263",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-290",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030c9dd-3f51-095a-9960-a5dfe222ba65",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "d01a51bf-4501-458a-8623-966b1b18ab6b",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "0f913042-a098-c714-6071-089f090983d9",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-263",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "c94d1365-f8dd-43db-86ab-2d7e267811a8",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%271279bdd2-af7f-4ee9-b793-dec1b7d5d670%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "1279bdd2-af7f-4ee9-b793-dec1b7d5d670",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:06.572Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:06.590Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-86111398",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%278e75eb33-278a-4254-826d-7f60cf7be77d%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "8e75eb33-278a-4254-826d-7f60cf7be77d",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.567Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.591Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-86959248",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%2751f0166f-7260-4d95-b4de-9e3962257edf%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "51f0166f-7260-4d95-b4de-9e3962257edf",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:05.688Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:58:23.326Z",
+      "dateCreated": "2021-10-05T21:50:05.748Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-31130122",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27899e67af-eb35-432a-81dd-eeb2d10e1f18%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "899e67af-eb35-432a-81dd-eeb2d10e1f18",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.948Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.971Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-22765910",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27faad34d1-8922-42bc-b9b6-8250722a47d0%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "faad34d1-8922-42bc-b9b6-8250722a47d0",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:05.090Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:52:30.298Z",
+      "dateCreated": "2021-10-05T21:49:55.969Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-38077287",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews/ae4d8dd4-57b7-402f-b9d9-bf26e8ed9f43",
+          "@type": "link",
+          "rel": "GET: Parent Resource"
+        }
+      ],
+      "resourceId": "0241a428-3e6a-4e54-97d4-b4ab5be0f667",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": null,
+      "hasChildren": false,
+      "iconId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.463Z",
+        "end": null
+      },
+      "status": "On",
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:52:25.412Z",
+      "data": {
+        "VirtualMachine.Cafe.Blueprint.Component.Id": "vSphere__vCenter__Machine_1",
+        "VirtualMachine.Memory.Size": "4",
+        "MachineDailyCost": 0,
+        "Custom.RTP.Date": "Fri Mar 22 13:16:00 UTC 2019",
+        "VirtualMachine.Cafe.Blueprint.Component.TypeId": "Infrastructure.CatalogItem.Machine.Virtual.vSphere",
+        "MachineDestructionDate": null,
+        "NETWORK_LIST": [
+          {
+            "classId": "dynamicops.api.model.NetworkViewModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "NETWORK_MAC_ADDRESS": "00:50:56:b0:95:15",
+              "NETWORK_NAME": "VM Network"
+            }
+          }
+        ],
+        "trace_id": "v73v1N3A",
+        "MachineReservationName": "dev002",
+        "PowerOff": true,
+        "VirtualMachine.Cafe.Blueprint.Name": "basicvm",
+        "IS_COMPONENT_MACHINE": false,
+        "Relocate": true,
+        "Destroy": true,
+        "MachineStorage": 1,
+        "MachineType": "Virtual",
+        "_number_of_instances": "1",
+        "ShowRequestYes": "123",
+        "MachineName": "cava-n-89-111-258",
+        "VirtualMachine.CPU.Count": "1",
+        "Component": "vSphere__vCenter__Machine_1",
+        "ChangeOwner": true,
+        "Reprovision": true,
+        "Test.Prop.Machine": "abcdef",
+        "ShowRequestNo": "456",
+        "Expire": true,
+        "SNAPSHOT_LIST": [],
+        "Reconfigure": true,
+        "AProperty": "12345",
+        "ConnectViaVmrc": true,
+        "VirtualMachine.Storage.Name": "sharedVmfs-0",
+        "MachineInterfaceType": "vSphere",
+        "Reset": true,
+        "VMware.VirtualCenter.OperatingSystem": "centosGuest",
+        "EXTERNAL_REFERENCE_ID": "vm-284",
+        "subtenantId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+        "MachineMemory": 4,
+        "Unregister": true,
+        "VirtualMachine.Admin.TotalDiskUsage": "1024",
+        "MachineGroupName": "Development",
+        "Reboot": true,
+        "Vrm.ProxyAgent.Uri": "https://cava-n-89-112.eng.vmware.com/VMPS2Proxy",
+        "VirtualMachine.Admin.Hostname": "mycluster",
+        "InstallTools": true,
+        "Suspend": true,
+        "_snapshot_propagation": true,
+        "DISK_VOLUMES": [
+          {
+            "classId": "dynamicops.api.model.DiskInputModel",
+            "componentTypeId": "com.vmware.csp.component.iaas.proxy.provider",
+            "typeFilter": null,
+            "componentId": null,
+            "data": {
+              "DISK_CAPACITY": 1,
+              "DISK_INPUT_ID": "DISK_INPUT_ID1"
+            }
+          }
+        ],
+        "MachineCPU": 1,
+        "VirtualMachine.Cafe.Blueprint.Id": "basicvm",
+        "ip_address": "",
+        "rbs.vmShutdown": true,
+        "ConnectViaNativeVmrc": true,
+        "Cafe.Shim.VirtualMachine.TotalStorageSize": "1",
+        "MachineInterfaceDisplayName": "vSphere (vCenter)",
+        "MachineBlueprintName": "basicvm",
+        "VirtualMachine.Admin.UUID": "5030ced1-b6f4-f655-d87f-35e4be9a1b56",
+        "VirtualMachine.Cafe.Blueprint.Component.Cluster.Index": "0",
+        "machineId": "e42b542c-bdff-4a37-a73a-8f3d78fb951c",
+        "providerBindingId": "basicvm",
+        "MachineGuestOperatingSystem": null,
+        "VirtualMachine.Disk0.IsClone": false,
+        "MachineExpirationDate": null,
+        "providerId": "6534a8aa-2f66-4d42-b287-4c005ec7110b",
+        "Shutdown": true,
+        "endpointExternalReferenceId": "41841f59-3acf-4e5e-8ab4-5602504eede5",
+        "ChangeLease": true,
+        "VirtualMachine.Admin.AgentID": "8c3b3042-8d09-7279-0f61-ef6d860e7668",
+        "CreateSnapshot": true
+      },
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "cava-n-89-111-258",
+      "resourceType": "Infrastructure.Virtual",
+      "catalogItemId": null,
+      "tenantId": "qe",
+      "parentResourceId": "ae4d8dd4-57b7-402f-b9d9-bf26e8ed9f43",
+      "requestState": "SUCCESSFUL"
+    },
+    {
+      "links": [
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/entitledCatalogItemViews/fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+          "@type": "link",
+          "rel": "GET: Catalog Item"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/requests/13ee87cf-c842-4d10-8c0b-d55258c52efe",
+          "@type": "link",
+          "rel": "GET: Request"
+        },
+        {
+          "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?managedOnly=false&withExtendedData=true&withOperations=true&%24filter=parentResource%20eq%20%27c5cb83f2-451a-4cc6-9103-e12b0dc35bc3%27",
+          "@type": "link",
+          "rel": "GET: Child Resources"
+        }
+      ],
+      "resourceId": "c5cb83f2-451a-4cc6-9103-e12b0dc35bc3",
+      "businessGroupId": "cb6c0498-9436-4f04-af9e-353aae3f14be",
+      "totalCost": null,
+      "catalogItemLabel": "basicvm",
+      "hasChildren": true,
+      "iconId": "9f082cbe-eab4-4112-81b5-38eba2b5b02b",
+      "costs": null,
+      "requestId": "13ee87cf-c842-4d10-8c0b-d55258c52efe",
+      "@type": "CatalogResourceView",
+      "costToDate": null,
+      "lease": {
+        "start": "2021-10-05T21:50:07.671Z",
+        "end": null
+      },
+      "status": null,
+      "description": null,
+      "lastUpdated": "2021-10-05T21:57:49.026Z",
+      "dateCreated": "2021-10-05T21:50:07.708Z",
+      "data": {},
+      "owners": [
+        "Fritz Arbeiter"
+      ],
+      "name": "basicvm-45666990",
+      "resourceType": "composition.resource.type.deployment",
+      "catalogItemId": "fb0a617c-dbc6-4ff2-8d3f-e02829ab5b9f",
+      "tenantId": "qe",
+      "parentResourceId": null,
+      "requestState": "SUCCESSFUL"
+    }
+  ],
+  "links": [
+    {
+      "href": "https://cava-n-89-111.eng.vmware.com/catalog-service/api/consumer/resourceViews?page=2&limit=20",
+      "@type": "link",
+      "rel": "prev"
+    }
+  ],
+  "metadata": {
+    "totalPages": 3,
+    "offset": 40,
+    "totalElements": 55,
+    "number": 3,
+    "size": 20
+  }
+}

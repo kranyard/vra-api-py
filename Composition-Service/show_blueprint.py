@@ -7,7 +7,7 @@ import json
 sys.path.append("../")
 import rw
 
-debug = False
+debug = True
 
 docid = sys.argv[1]
 
@@ -18,7 +18,7 @@ headers = {'Accept':'application/json;charset=UTF-8','Content-Type':'application
 
 url = "https://{0}/composition-service/api/blueprints/{1}".format(host,docid)
 
-request = rw.getUrl(url,headers)
+request = rw.getUrl(url,headers,showUrl=False)
 
 if ( debug ):
 	print json.dumps(request)
